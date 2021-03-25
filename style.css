@@ -1,0 +1,297 @@
+/*http://static.mlstatic.com/org-img/Manual/index.html*/
+/*http://ux.mercadolibre.com/brandbook/*/
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/**********************************************************/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/**********************************************************/
+
+html {
+    height: 100%;
+}
+
+body{
+	background: url('tm.png'),url('banner.jpg') top no-repeat BLACK
+	/*box-shadow: inset 0 0 0 50vw rgba(219,190,153, 0.7);*/
+}
+
+.wrap{
+        width: 600px;
+        margin: auto;
+	background: #FFE600;
+        color: WHITE;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+	display: flex;
+	z-index: -2;
+}
+
+ul.tabs{
+	width: 150px;
+	height: 300px;
+	background: #00000000;
+
+
+	display: flex;
+ 	flex-direction: column;
+	list-style: none;
+        padding: 0px;
+        margin: 0px;
+}
+ul.tabs li.tab1{
+	width: 100%;
+	height: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    	background: SEAGREEN url('tab1.png') center no-repeat;   
+	box-shadow: inset 0 0 0 50vw rgba(139,183,76, 0.5);	
+	border-top-left-radius: 15px;
+    	border-bottom-left-radius: 15px;
+    	border-right: dimgray;
+}
+ul.tabs li.tab2{
+	width: 100%;
+	height: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    	background: DARKCYAN url('tab2.png') center no-repeat;   
+	box-shadow: inset 0 0 0 50vw rgba(41,86,143, 0.5);
+    	border-top-left-radius: 15px;
+    	border-bottom-left-radius: 15px;
+    	border-right: dimgray;
+}
+ul.tabs li.tab3{
+	width: 100%;
+	height: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    	background: DARKRED url('tab3.png') center no-repeat;   
+	box-shadow: inset 0 0 0 50vw rgba(200,70,53, 0.5);
+    	border-top-left-radius: 15px;
+    	border-bottom-left-radius: 15px;
+    	border-right: dimgray;
+}
+ul.tabs li:hover {
+	box-shadow: inset 0 0 0 50vw rgba(0,0,0, 0.8);
+	transition: box-shadow 0.5s ease-out;
+}
+
+ul.tabs li a{
+	font: bold 10px 'Lato', sans-serif;
+	color:  WHITE;
+	text-align: left;
+	display: block;
+	padding: 80px 0px 0px 20px;
+	text-decoration: none
+}
+
+.active{
+	height: 100px;
+	background: rgba(51, 51, 51, 0.5);
+    	border-top-left-radius: 13px;
+    	border-bottom-left-radius: 13px;
+    	border-left: 5px double LightGray;
+}
+
+.secciones{
+	list-style: none;
+	width: 500px;
+	height: 550px;
+	box-sizing: border-box;
+    	background: #333333;
+        margin: 0px 0px 0px 0px;
+   	padding: 5px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+}
+
+.secciones article{
+	margin: auto;
+	padding: 5px;
+}
+
+.secciones article p{
+	margin: auto;
+	text-align: justify;
+}
+
+/**********************************************************/
+
+.banner{	
+	position: sticky;
+	top: 0px;
+	height: 30px;
+	width: 100%;
+ 	background: url('logo.png') left top no-repeat #FFE600;
+	border-bottom: 2px solid BLACK;
+}
+
+/**********************************************************/
+
+.manual {
+	position:relative;
+	padding: 5px;
+ 	border: 2px solid WHITE;
+	border-radius: 10px;
+	background: repeating-linear-gradient(45deg, DARKSLATEGRAY, DARKSLATEGRAY 10px, #333333 10px, #333333 20px);
+}
+
+.manualSearch {
+	position:relative;
+	margin: auto auto auto auto;
+	padding: 20px;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, rgba(170,219,29,0.95) 18%, rgba(155,155,155,0.5) 18%, rgba(155,155,155,0.5));
+}
+
+.manual legend {
+	font: bold 15px 'Lato', sans-serif;
+	width: 150px;
+	margin: -5px 0px 20px -20px; 
+	padding: 5px 20px 5px 20px;
+	border-radius: 0px 50px 50px 0px;
+	background: GRAY;  
+   	color: WHITE;
+    	text-shadow: 0px 0px 5px GREEN;
+}
+.manualSearch p {
+	padding: 0px 20px 0px 20px;
+	font: 13px 'Lato', sans-serif;
+   	color: WHITE;
+}
+.manualSearch select {
+	width: 375px; height:34px;
+	font: 13px 'Lato', sans-serif;
+	padding: 3px 3px 3px 3px;
+	border: 2px solid rgba(170,219,29,0.95) ;
+	border-radius: 5px;
+}
+.manualSearch select:focus{ background:rgba(245,255,213,0.9); }
+.manualSearch textarea {
+	width: 375px; height:130px;
+	font: 13px 'Lato', sans-serif;
+	padding: 3px 3px 3px 3px;
+	border: 2px solid  WHITE;
+	border-radius: 5px;
+	background: rgba(245,255,213,0.9);
+}
+.manualSearch textarea:focus{ background: lightgray; }
+
+/**********************************************************/
+
+.contacto {
+	position:relative;
+	padding: 5px;
+ 	border: 2px solid WHITE;
+	border-radius: 10px;
+	background: repeating-linear-gradient(45deg, DARKSLATEGRAY, DARKSLATEGRAY 10px, #333333 10px, #333333 20px);
+}
+
+.contactoForm {
+	position:relative;
+	margin: auto auto auto auto;
+	padding: 20px;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, rgba(255,230,0,0.95) 22%, rgba(155,155,155,0.5) 22%, rgba(155,155,155,0.5));
+}
+
+.contacto legend {
+	font: bold 15px 'Lato', sans-serif;
+	width: 150px;
+	margin: -5px 0px 20px -20px; 
+	padding: 5px 20px 5px 20px;
+	border-radius: 0px 50px 50px 0px;
+	background: GRAY;  
+   	color: WHITE;
+    	text-shadow: 0px 0px 5px YELLOW;
+}
+.contactoForm p {
+	padding: 0px 20px 0px 20px;
+	font: 13px 'Lato', sans-serif;
+   	color: BLACK;
+}
+.contactoForm input {
+	width: 235px; height:34px;
+	font: 13px 'Lato', sans-serif;
+	padding: 3px 3px 3px 5px;
+	border: 2px solid  WHITE;
+	border-radius: 5px;
+}
+.contactoForm fieldset  {
+	width: 375px;
+	font: 13px 'Lato', sans-serif;
+	padding: 5px 5px 5px 120px;
+	border: 2px solid  GRAY;
+	border-radius: 10px;
+	background: rgba(51,51,51,0.3);
+}
+.contactoForm fieldset legend{
+	width: 200px;
+	margin: 0px;
+	padding: 8px;
+	font: 13px 'Lato', sans-serif;
+	background: none;
+	text-shadow: none;
+}
+.contactoForm fieldset input.radioB {
+	width: 15px; height:15px;
+}
+.contactoForm textarea {
+	width: 300px; height:130px;
+	font: 13px 'Lato', sans-serif;
+	padding: 3px 3px 3px 5px;
+	border: 2px solid  WHITE;
+	border-radius: 5px;
+}
+.contactoForm input:focus {
+  	border: 2px solid #5AC4F1;
+	background-color: WHITE;
+}
+.contactoForm select {
+	width: 230px; height:34px;
+	font: 13px 'Lato', sans-serif;
+	padding: 3px 3px 3px 5px;
+	border: 2px solid  WHITE;
+	border-radius: 5px;
+}
+.contacto button.buttonSend{
+	position: absolute;
+	top: 315px; right: 25px;
+	width:60px; height:60px;
+	border: 4px inset rgba(255,230,0,1);
+	border-radius: 80%;
+	font: bold 12px 'Lato', sans-serif;
+	color: WHITE;
+	background: rgba(0,0,0,0.9);
+}
+.contacto button.buttonClean{
+	position: absolute;
+	top: 385px; right: 25px;
+	width:60px; height:60px;
+	border: 4px inset rgba(255,230,0,1);
+	border-radius: 80%;
+	font: bold 12px 'Lato', sans-serif;
+	color: WHITE;
+	background: rgba(0,0,0,0.9);
+}
+.contacto button:hover{
+	border: 4px inset rgba(237,25,91,1);
+}
+.contacto button:active{
+	border: 4px inset rgba(90,196,241,1);
+	color: rgba(90,196,241,0.80);
+}
