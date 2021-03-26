@@ -19,13 +19,13 @@ html {
 }
 
 body{
-	background: url('tm.png'),url('banner.jpg') top no-repeat GRAY
+	background: url('tm.png'),url('banner.jpg') top no-repeat #082567
 }
 
 .wrap{
         width: 1100px;
         margin: auto;
-	background: #FFE600;
+	background: LIGHTGRAY;
         color: WHITE;
         padding: 10px 10px 10px 10px;
         border-radius: 10px;
@@ -206,8 +206,8 @@ ul.tabs li a{
 	top: 0px;
 	height: 55px;
 	width: 100%;
- 	background: url('logo.png') left top no-repeat #187BCD;
-	border-bottom: 2px solid BLACK;
+ 	background: url('logo.png') left top no-repeat, linear-gradient(to right, rgba(250,250,250,0.9) 12%, rgba(60,60,60,0.95));
+	border-bottom: 0px solid BLACK;
 }
 
 /**********************************************************/
