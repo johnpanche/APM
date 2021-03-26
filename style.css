@@ -22,8 +22,74 @@ body{
 	background: url('tm.png'),url('banner.jpg') top no-repeat #082567
 }
 
+
+/**********************************************************/
+
+.banner{	
+	position: sticky;
+	top: 0px;
+	height: 55px;
+	width: 100%;
+ 	background: url('logo.png') left top no-repeat, linear-gradient(to right, rgba(250,250,250,1.0) 12%, rgba(60,60,60,1.0));
+	border-bottom: 0px solid BLACK;
+}
+
+/*********************************************/
+
+.cloud1 {	
+	position: absolute;
+	top: 130px;
+	width:200px; height: 120px; 
+	background: url('Cloud.png') left bottom no-repeat;
+	opacity: 0.7;
+	animation: moveclouds 45s linear normal infinite;
+}
+
+.cloud2 {
+	position: absolute;
+	top: 60px;
+	width: 185px; height: 126px; 
+	background: url('Cloud.png') right bottom no-repeat;
+	opacity: 0.65;
+	animation: moveclouds 60s linear normal infinite;
+}
+
+.cloud3 {
+	position: absolute;
+	top: 50px;
+	width: 320px; height: 130px; 
+	background: url('Cloud.png') top center no-repeat;
+	opacity: 0.4;
+	animation: moveclouds 100s linear alternate infinite;
+}
+
+.cloud4 {
+	position: absolute;
+	top: 50px;
+	width:200px; height: 120px; 
+	background: url('Cloud.png') left bottom no-repeat;
+	opacity: 0.6;
+	animation: moveclouds 230s linear normal infinite;
+}
+.cloud5 {
+	position: absolute;
+	top: 120px;
+	width: 320px; height: 130px; 
+	background: url('Cloud.png') top center no-repeat;
+	opacity: 0.5;
+	animation: moveclouds 250s linear alternate infinite;
+}
+
+@keyframes moveclouds {
+	0% {
+		transform: translateX(1000px);}
+	100% {
+		transform: translateX(-200px);}
+}
+/*********************************************/
+
 .wrap{
-        width: 1100px;
+        width: 1300px;
         margin: auto;
 	background: LIGHTGRAY;
         color: WHITE;
@@ -143,7 +209,7 @@ ul.tabs li.tab8{
     	border-bottom-left-radius: 15px;
     	border-right: dimgray;
 }
-ul.tabs li.tab8{
+ul.tabs li.tab9{
 	width: 100%;
 	height: 100%;
         list-style-type: none;
@@ -178,7 +244,7 @@ ul.tabs li a{
 
 .secciones{
 	list-style: none;
-	width: 1000px;
+	width: 1300px;
 	height: 2000px;
 	box-sizing: border-box;
     	background: #333333;
@@ -201,17 +267,6 @@ ul.tabs li a{
 
 /**********************************************************/
 
-.banner{	
-	position: sticky;
-	top: 0px;
-	height: 55px;
-	width: 100%;
- 	background: url('logo.png') left top no-repeat, linear-gradient(to right, rgba(250,250,250,0.9) 12%, rgba(60,60,60,0.95));
-	border-bottom: 0px solid BLACK;
-}
-
-/**********************************************************/
-
 .manual {
 	position:relative;
 	padding: 5px;
@@ -225,7 +280,7 @@ ul.tabs li a{
 	margin: auto auto auto auto;
 	padding: 20px;
 	border-radius: 10px;
-	background: linear-gradient(to bottom, rgba(170,219,29,0.95) 18%, rgba(155,155,155,0.5) 18%, rgba(155,155,155,0.5));
+	background: linear-gradient(to bottom, rgba(14,84,123,0.95) 18%, rgba(155,155,155,0.5) 18%, rgba(155,155,155,0.5));
 }
 
 .manual legend {
@@ -236,7 +291,7 @@ ul.tabs li a{
 	border-radius: 0px 50px 50px 0px;
 	background: GRAY;  
    	color: WHITE;
-    	text-shadow: 0px 0px 5px GREEN;
+    	text-shadow: 0px 0px 5px BLUE;
 }
 .manualSearch p {
 	padding: 0px 20px 0px 20px;
