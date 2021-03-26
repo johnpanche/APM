@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Proyecto integrador de curso</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+
+	<script src="jquery-3.2.1.min.js"></script>
+
+   
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="banner"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="wrap">
+		<ul class="tabs">
+			<li class="tab1"><a href="#tab1">GESTIÓN DE PRODUCCIÓN Y AUTOMATIZACIÓN</a></li>
+			<li class="tab2"><a href="#tab2">AUTOMATIZACIÓN E INDUSTRIA 4.0</a></li>
+			<li class="tab3"><a href="#tab3">GESTIÓN Y EVALUACIÓN ECONÓMICA DE PROYECTOS</a></li>
+			<li class="tab4"><a href="#tab1">CELDA DE MANUFACTURA ROBOTIZADA</a></li>
+			<li class="tab5"><a href="#tab2">VIRTUALIZACIÓN DE FÁBRICA</a></li>
+			<li class="tab6"><a href="#tab3">CONTROLADORES INDUSTRIALES (PLC)</a></li>
+			<li class="tab7"><a href="#tab1">ACTUADORES EN AUTOMATIZACIÓN</a></li>
+			<li class="tab8"><a href="#tab2">SISTEMA DE SUPERVISIÓN SCADA</a></li>
+			<li class="tab9"><a href="#tab3">INFORMACIÓN</a></li>
+		</ul>
+		<div class="secciones">
+<!-- ******************************************************************************** -->
+			<article id="tab1">
+  					<div class="manual">
+					<div class="manualSearch">
+  						<legend>MANUAL</legend>
+						<p>Completa los siguientes datos</p>
+						<br><br>
+						<select id="l1">
+    							<option value="" disabled selected>Selecciona la BU de tu interés</option>
+						</select>
+						<br><br>
+						<select id="l2">
+    							<option value="" disabled selected>Selecciona la BU de tu interés</option>
+						</select>
+						<br><br>						
+						<textarea id="what" placeholder="¿Qué debes hacer?"></textarea>
+						<br><br>						
+						<textarea id="how" placeholder="¿Cómo debes decirlo?"></textarea>
+						</div>
+					</div>	
+				</form>
+			</article>
+<!-- ******************************************************************************** -->
+			<article id="tab2">
+				<h1>BUGS</h1>
+				<iframe src="https://sites.google.com/a/mercadolibre.com.co/manual-xperience/" width="400" height="600" scrolling="no" frameborder="0"></iframe>
+			</article>
+<!-- ******************************************************************************** -->
+			<article id="tab3">
+				<form action="https://docs.google.com/forms/d/e/1FAIpQLSfkC-CnBbb7JE2oLn07oUoAep87DUzKPF-SrY6UN8icTZ2cug/formResponse" target="_self" method="POST">
+					<div class="contacto">
+					<div class="contactoForm">
+  						<legend>CONTACTO</legend>
+						<p>Completa los siguientes datos antes de derivar:</p>
+						<br>
+						<br>
+						<fieldset>
+							<legend align="center">¿Te es útil la herramienta?</legend>
+							<input type="radio" class="radioB" name="entry.1204117259" value="Sí"> Sí &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" class="radioB" name="entry.1204117259" value="No"> No	 <br><br>		
+						</fieldset>
+						<fieldset>
+							<legend align="center">¿Con qué frecuencia la utilizas?</legend>
+							<input type="radio" class="radioB" name="entry.656839720" value="A diario"> A diario <br>
+							<input type="radio" class="radioB" name="entry.656839720" value="Una vez a la semana"> Una vez a la semana <br>
+							<input type="radio" class="radioB" name="entry.656839720" value="Una vez al mes"> Una vez al mes <br>
+							<br>			
+						</fieldset>
+						<br>
+						<textarea id="comment" name="entry.2115571736" size="50" placeholder="¿Qué proceso crees que le haga falta?" autocomplete="off" required></textarea>
+						<button type="submit" class="buttonSend" id="btnSend">ENVIAR</button>
+						<button type="reset" class="buttonClean" id="btnClean">BORRAR</button>
+						</div>
+					</div>	
+				</form>
+			</article>
+<!-- ******************************************************************************** -->
+		</div>
+	</div>
+
+</body>
+</html>    

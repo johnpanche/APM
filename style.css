@@ -143,6 +143,18 @@ ul.tabs li.tab8{
     	border-bottom-left-radius: 15px;
     	border-right: dimgray;
 }
+ul.tabs li.tab8{
+	width: 100%;
+	height: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    	background: CYAN url('tab8.png') center no-repeat;   
+	box-shadow: inset 0 0 0 50vw rgba(200,70,53, 0.5);
+    	border-top-left-radius: 15px;
+    	border-bottom-left-radius: 15px;
+    	border-right: dimgray;
+}
 ul.tabs li:hover {
 	box-shadow: inset 0 0 0 50vw rgba(0,0,0, 0.8);
 	transition: box-shadow 0.5s ease-out;
@@ -158,11 +170,10 @@ ul.tabs li a{
 }
 
 .active{
-	height: 100px;
 	background: rgba(51, 51, 51, 0.5);
     	border-top-left-radius: 13px;
     	border-bottom-left-radius: 13px;
-    	border-left: 5px double LightGray;
+    	border-left: 5px LightGray;
 }
 
 .secciones{
@@ -193,9 +204,9 @@ ul.tabs li a{
 .banner{	
 	position: sticky;
 	top: 0px;
-	height: 30px;
+	height: 55px;
 	width: 100%;
- 	background: url('logo.png') left top no-repeat #FFE600;
+ 	background: url('logo.png') left top no-repeat #187BCD;
 	border-bottom: 2px solid BLACK;
 }
 
