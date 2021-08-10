@@ -1,2 +1,2 @@
 # APM
-Proyecto integrador de curso [APM 2021-I]
+Celda de Manufactura Robotizada [APM 2021-I]
