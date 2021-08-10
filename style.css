@@ -19,7 +19,7 @@ html {
 }
 
 body{
-	background: url('tm.png'), url('banner.png') top no-repeat BLACK;
+	background: url('tm.png') #332F2C;
    	cursor: url('cursor.png'),auto;
 }
 /**********************************************************/
@@ -63,7 +63,7 @@ body{
 }
 
 ul.tabs{
-	width: 200px;
+	width: 150px;
 	height: 300px;
 	background: #00000000;
 
@@ -79,8 +79,8 @@ ul.tabs li.tab1{
         list-style-type: none;
         text-align: center;
         margin: 0px 0px 0px 0px;
-    	background: SEAGREEN url('tab1.PNG') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(36,70,35,0.7);	
+    	background: DARKCYAN url('tab1.PNG') center no-repeat;
+	box-shadow: inset 0 0 0 50vw rgba(14,84,123,0.7);  	
 	border-top-left-radius: 15px;
     	border-bottom-left-radius: 15px;
     	border-right: dimgray;
@@ -91,8 +91,8 @@ ul.tabs li.tab2{
         list-style-type: none;
         text-align: center;
         margin: 0px 0px 0px 0px;
-    	background: DARKCYAN url('tab2.png') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(14,84,123,0.7);
+    	background: SEAGREEN url('tab2.png') center no-repeat;   
+	box-shadow: inset 0 0 0 50vw rgba(36,70,35,0.7);
     	border-top-left-radius: 15px;
     	border-bottom-left-radius: 15px;
     	border-right: dimgray;
@@ -197,7 +197,7 @@ ul.tabs li a{
 	margin: auto auto auto auto;
 	padding: 20px;
 	border-radius: 10px;
-	background: linear-gradient(to bottom, rgba(36,70,35,0.95) 15%, rgba(155,155,155,0.65) 15%, rgba(155,155,155,0.65));
+	background: linear-gradient(to bottom, rgba(14,84,123,0.95) 15%, rgba(155,155,155,0.65) 15%, rgba(155,155,155,0.65));
 }
 
 .sectionText1 legend {
@@ -237,7 +237,7 @@ ul.tabs li a{
 	margin: auto auto auto auto;
 	padding: 20px;
 	border-radius: 10px;
-	background: linear-gradient(to bottom, rgba(14,84,123,0.95) 15%, rgba(155,155,155,0.65) 15%, rgba(155,155,155,0.65));
+	background: linear-gradient(to bottom, rgba(36,70,35,0.95) 15%, rgba(155,155,155,0.65) 15%, rgba(155,155,155,0.65));
 }
 
 .sectionText2 legend {
