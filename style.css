@@ -19,19 +19,33 @@ html {
 }
 
 body{
-	background: url('tm.png'),url('banner.jpg') top no-repeat #082567
+	background: url('tm.png'), url('banner.png') top no-repeat BLACK;
+   	cursor: url('cursor.png'),auto;
 }
-
-
 /**********************************************************/
 
 .banner{	
 	position: sticky;
 	top: 0px;
-	height: 55px;
+	height: 42px;
 	width: 100%;
- 	background: url('logo.png') left top no-repeat, linear-gradient(to right, rgba(250,250,250,1.0) 12%, rgba(31,52,56,1.0) 50%, rgba(31,52,56,1.0));
-	border-top: 0px solid BLACK;
+ 	background: url('logo.png') 1% 0% no-repeat, linear-gradient(to right, rgba(250,250,250,1.0) 10%,  rgba(0,0,0,1.0) 10%,  rgba(0,0,0,1.0));
+        /*border-bottom: 2px solid BLACK;*/
+	z-index: 1;
+	
+	font: bold 26px 'Lato', sans-serif;
+	color:  WHITE;
+	text-align: left;
+	padding: 5px 0px 0px 200px;
+	text-decoration: none
+}
+.title{		
+	font: bold 45px 'Lato', sans-serif;
+	color:  WHITE;
+	background-color: rgba(64,64,64, 0.5);
+	text-align: left;
+	padding: 0px 0px 0px 30px;
+    	text-shadow: 0px 0px 30px BLACK;
 }
 
 /*********************************************/
@@ -91,21 +105,19 @@ body{
 .wrap{
         width: 1300px;
         margin: auto;
-	background: LIGHTGRAY;
+	background: DIMGRAY;
         color: WHITE;
         padding: 10px 10px 10px 10px;
         border-radius: 10px;
         box-sizing: border-box;
         box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
 	display: flex;
-	z-index: -2;
 }
 
 ul.tabs{
 	width: 200px;
 	height: 300px;
 	background: #00000000;
-
 
 	display: flex;
  	flex-direction: column;
@@ -119,8 +131,8 @@ ul.tabs li.tab1{
         list-style-type: none;
         text-align: center;
         margin: 0px 0px 0px 0px;
-    	background: SEAGREEN url('tab1.png') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(139,183,76, 0.5);	
+    	background: SEAGREEN url('tab1.PNG') center no-repeat;   
+	box-shadow: inset 0 0 0 50vw rgba(36,70,35,0.7);	
 	border-top-left-radius: 15px;
     	border-bottom-left-radius: 15px;
     	border-right: dimgray;
@@ -132,7 +144,7 @@ ul.tabs li.tab2{
         text-align: center;
         margin: 0px 0px 0px 0px;
     	background: DARKCYAN url('tab2.png') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(41,86,143, 0.5);
+	box-shadow: inset 0 0 0 50vw rgba(14,84,123,0.7);
     	border-top-left-radius: 15px;
     	border-bottom-left-radius: 15px;
     	border-right: dimgray;
@@ -143,8 +155,8 @@ ul.tabs li.tab3{
         list-style-type: none;
         text-align: center;
         margin: 0px 0px 0px 0px;
-    	background: DARKRED url('tab3.png') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(200,70,53, 0.5);
+    	background: DARKRED url('tab3.PNG') center no-repeat;   
+	box-shadow: inset 0 0 0 50vw rgba(131,22,11,0.7);
     	border-top-left-radius: 15px;
     	border-bottom-left-radius: 15px;
     	border-right: dimgray;
@@ -155,8 +167,8 @@ ul.tabs li.tab4{
         list-style-type: none;
         text-align: center;
         margin: 0px 0px 0px 0px;
-    	background: BLUE url('tab4.png') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(200,70,53, 0.5);
+    	background: GOLD url('tab4.png') center no-repeat;   
+	box-shadow: inset 0 0 0 50vw rgba(240,192,7,0.7);
     	border-top-left-radius: 15px;
     	border-bottom-left-radius: 15px;
     	border-right: dimgray;
@@ -167,56 +179,8 @@ ul.tabs li.tab5{
         list-style-type: none;
         text-align: center;
         margin: 0px 0px 0px 0px;
-    	background: GREEN url('tab5.png') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(200,70,53, 0.5);
-    	border-top-left-radius: 15px;
-    	border-bottom-left-radius: 15px;
-    	border-right: dimgray;
-}
-ul.tabs li.tab6{
-	width: 100%;
-	height: 100%;
-        list-style-type: none;
-        text-align: center;
-        margin: 0px 0px 0px 0px;
-    	background: YELLOW url('tab6.png') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(200,70,53, 0.5);
-    	border-top-left-radius: 15px;
-    	border-bottom-left-radius: 15px;
-    	border-right: dimgray;
-}
-ul.tabs li.tab7{
-	width: 100%;
-	height: 100%;
-        list-style-type: none;
-        text-align: center;
-        margin: 0px 0px 0px 0px;
-    	background: PURPLE url('tab7.png') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(200,70,53, 0.5);
-    	border-top-left-radius: 15px;
-    	border-bottom-left-radius: 15px;
-    	border-right: dimgray;
-}
-ul.tabs li.tab8{
-	width: 100%;
-	height: 100%;
-        list-style-type: none;
-        text-align: center;
-        margin: 0px 0px 0px 0px;
-    	background: PINK url('tab8.png') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(200,70,53, 0.5);
-    	border-top-left-radius: 15px;
-    	border-bottom-left-radius: 15px;
-    	border-right: dimgray;
-}
-ul.tabs li.tab9{
-	width: 100%;
-	height: 100%;
-        list-style-type: none;
-        text-align: center;
-        margin: 0px 0px 0px 0px;
-    	background: CYAN url('tab8.png') center no-repeat;   
-	box-shadow: inset 0 0 0 50vw rgba(200,70,53, 0.5);
+    	background: #663399 url('tab5.png') center no-repeat;   
+	box-shadow: inset 0 0 0 50vw rgba(56,22,64,0.7);
     	border-top-left-radius: 15px;
     	border-bottom-left-radius: 15px;
     	border-right: dimgray;
@@ -245,7 +209,7 @@ ul.tabs li a{
 .secciones{
 	list-style: none;
 	width: 1300px;
-	height: 2000px;
+	height: 1200px;
 	box-sizing: border-box;
     	background: #333333;
         margin: 0px 0px 0px 0px;
@@ -258,6 +222,10 @@ ul.tabs li a{
 .secciones article{
 	margin: auto;
 	padding: 5px;
+	font: bold 12px 'Lato', sans-serif;
+	color:  WHITE;
+	text-align: left;
+	text-decoration: none
 }
 
 .secciones article p{
@@ -267,156 +235,311 @@ ul.tabs li a{
 
 /**********************************************************/
 
-.manual {
+.section1 {
 	position:relative;
 	padding: 5px;
  	border: 2px solid WHITE;
 	border-radius: 10px;
-	background: repeating-linear-gradient(45deg, DARKSLATEGRAY, DARKSLATEGRAY 10px, #333333 10px, #333333 20px);
+	background: repeating-linear-gradient(45deg, #1D1D1D, #1D1D1D 10px, #333333 10px, #333333 20px);
 }
 
-.manualSearch {
+.sectionText1 {
+	height: 1150px;
 	position:relative;
 	margin: auto auto auto auto;
 	padding: 20px;
 	border-radius: 10px;
-	background: linear-gradient(to bottom, rgba(14,84,123,0.95) 18%, rgba(155,155,155,0.5) 18%, rgba(155,155,155,0.5));
+	background: linear-gradient(to bottom, rgba(36,70,35,0.95) 15%, rgba(155,155,155,0.65) 15%, rgba(155,155,155,0.65));
 }
 
-.manual legend {
-	font: bold 15px 'Lato', sans-serif;
-	width: 150px;
+.sectionText1 legend {
+	font: bold 22px 'Arial', sans-serif;
+	width: 800px;
 	margin: -5px 0px 20px -20px; 
 	padding: 5px 20px 5px 20px;
 	border-radius: 0px 50px 50px 0px;
-	background: GRAY;  
+	background: BLACK;
    	color: WHITE;
-    	text-shadow: 0px 0px 5px BLUE;
+    	text-shadow: 0px 0px 5px GREEN;
 }
-.manualSearch p {
+.sectionText1 p {
 	padding: 0px 20px 0px 20px;
-	font: 13px 'Lato', sans-serif;
-   	color: WHITE;
+	font: 16px 'Arial', sans-serif;
+   	color: BLACK;
 }
-.manualSearch select {
-	width: 375px; height:34px;
-	font: 13px 'Lato', sans-serif;
-	padding: 3px 3px 3px 3px;
-	border: 2px solid rgba(170,219,29,0.95) ;
-	border-radius: 5px;
+.sectionText1 img {
+	border: 2px solid rgba(36,70,35,0.95);
+	padding: 5px 5px 5px 5px;
 }
-.manualSearch select:focus{ background:rgba(245,255,213,0.9); }
-.manualSearch textarea {
-	width: 375px; height:130px;
-	font: 13px 'Lato', sans-serif;
-	padding: 3px 3px 3px 3px;
-	border: 2px solid  WHITE;
-	border-radius: 5px;
-	background: rgba(245,255,213,0.9);
-}
-.manualSearch textarea:focus{ background: lightgray; }
 
 /**********************************************************/
 
-.contacto {
+.section2 {
 	position:relative;
 	padding: 5px;
  	border: 2px solid WHITE;
 	border-radius: 10px;
-	background: repeating-linear-gradient(45deg, DARKSLATEGRAY, DARKSLATEGRAY 10px, #333333 10px, #333333 20px);
+	background: repeating-linear-gradient(45deg, #1D1D1D, #1D1D1D 10px, #333333 10px, #333333 20px);
 }
 
-.contactoForm {
+.sectionText2 {
+	overflow-y: scroll; 
+	height: 1150px;
 	position:relative;
 	margin: auto auto auto auto;
 	padding: 20px;
 	border-radius: 10px;
-	background: linear-gradient(to bottom, rgba(255,230,0,0.95) 22%, rgba(155,155,155,0.5) 22%, rgba(155,155,155,0.5));
+	background: linear-gradient(to bottom, rgba(14,84,123,0.95) 15%, rgba(155,155,155,0.65) 15%, rgba(155,155,155,0.65));
 }
 
-.contacto legend {
-	font: bold 15px 'Lato', sans-serif;
-	width: 150px;
+.sectionText2 legend {
+	font: bold 22px 'Arial', sans-serif;
+	width: 800px;
 	margin: -5px 0px 20px -20px; 
 	padding: 5px 20px 5px 20px;
 	border-radius: 0px 50px 50px 0px;
-	background: GRAY;  
+	background: BLACK;
+   	color: WHITE;
+    	text-shadow: 0px 0px 5px BLUE;
+}
+.sectionText2 p {
+	padding: 0px 20px 0px 20px;
+	font: 16px 'Arial', sans-serif;
+   	color: BLACK;
+}
+.sectionText2 img {
+	border: 2px solid rgba(14,84,123,0.95);
+	padding: 5px 5px 5px 5px;
+}
+
+.sectionText2 table.RobotSelector {
+  	margin-left: auto;
+  	margin-right: auto;
+  	border: 2px solid WHITE;
+  	width: 95%;
+	text-align: center;
+  	background-color: rgba(0,0,0,0.8);
+	font: 12px 'Arial', sans-serif;
+   	color: WHITE;
+}
+/**********************************************************/
+
+.section3 {
+	position:relative;
+	padding: 5px;
+ 	border: 2px solid WHITE;
+	border-radius: 10px;
+	background: repeating-linear-gradient(45deg, #1D1D1D, #1D1D1D 10px, #333333 10px, #333333 20px);
+}
+
+.sectionText3 {
+	overflow-y: scroll; 
+	height: 1150px;
+	position:relative;
+	margin: auto auto auto auto;
+	padding: 20px;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, rgba(131,22,11,0.95) 15%, rgba(155,155,155,0.65) 15%, rgba(155,155,155,0.65));
+}
+
+.sectionText3 legend {
+	font: bold 22px 'Arial', sans-serif;
+	width: 800px;
+	margin: -5px 0px 20px -20px; 
+	padding: 5px 20px 5px 20px;
+	border-radius: 0px 50px 50px 0px;
+	background: BLACK;
+   	color: WHITE;
+    	text-shadow: 0px 0px 5px RED;
+}
+.sectionText3 p {
+	padding: 0px 20px 0px 20px;
+	font: 16px 'Arial', sans-serif;
+   	color: BLACK;
+}
+.sectionText3 img {
+	border: 2px solid rgba(131,22,11,0.95);
+	padding: 5px 5px 5px 5px;
+}
+.sectionText3 iframe {
+	border: 2px solid rgba(131,22,11,0.95);
+	padding: 5px 5px 5px 5px;
+}
+/**********************************************************/
+
+.section4 {
+	position:relative;
+	padding: 5px;
+ 	border: 2px solid WHITE;
+	border-radius: 10px;
+	background: repeating-linear-gradient(45deg, #1D1D1D, #1D1D1D 10px, #333333 10px, #333333 20px);
+}
+
+.sectionText4 {
+	overflow-y: scroll; 
+	height: 1150px;
+	position:relative;
+	margin: auto auto auto auto;
+	padding: 20px;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, rgba(240,192,7,0.95) 15%, rgba(155,155,155,0.65) 15%, rgba(155,155,155,0.65));
+}
+
+.sectionText4 legend {
+	font: bold 22px 'Arial', sans-serif;
+	width: 800px;
+	margin: -5px 0px 20px -20px; 
+	padding: 5px 20px 5px 20px;
+	border-radius: 0px 50px 50px 0px;
+	background: BLACK;  
    	color: WHITE;
     	text-shadow: 0px 0px 5px YELLOW;
 }
-.contactoForm p {
+.sectionText4 p {
 	padding: 0px 20px 0px 20px;
-	font: 13px 'Lato', sans-serif;
+	font: 16px 'Arial', sans-serif;
    	color: BLACK;
 }
-.contactoForm input {
-	width: 235px; height:34px;
-	font: 13px 'Lato', sans-serif;
-	padding: 3px 3px 3px 5px;
-	border: 2px solid  WHITE;
-	border-radius: 5px;
+.sectionText4 img {
+	border: 2px solid GOLD;
+	padding: 5px 5px 5px 5px;
 }
-.contactoForm fieldset  {
-	width: 375px;
-	font: 13px 'Lato', sans-serif;
-	padding: 5px 5px 5px 120px;
+.sectionText4 form {
+	padding: 0px 20px 0px 20px;
+}
+.section4 form button.Download{
+	width:100px;height:20px;
+	border: 2px inset rgba(255,255,255,1);
+	border-radius: 1%;
+	font: bold 12px 'Arial', sans-serif;
+	text-align: center;
+	color: WHITE;
+	background-color: GOLD;
+}
+.section4 form button:hover{
+	border: 2px inset YELLOW;
+}
+/**********************************************************/
+
+.section5 {
+	position:relative;
+	padding: 5px;
+ 	border: 2px solid WHITE;
+	border-radius: 10px;
+	background: repeating-linear-gradient(45deg, #1D1D1D, #1D1D1D 10px, #333333 10px, #333333 20px);
+}
+
+.sectionText5 {
+	height: 1150px;
+	position:relative;
+	margin: auto auto auto auto;
+	padding: 20px;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, rgba(56,22,64,0.95) 15%, rgba(155,155,155,0.65) 15%, rgba(155,155,155,0.65));
+}
+
+.sectionText5 legend {
+	font: bold 22px 'Arial', sans-serif;
+	width: 800px;
+	margin: -5px 0px 20px -20px; 
+	padding: 5px 20px 5px 20px;
+	border-radius: 0px 50px 50px 0px;
+	background: BLACK;
+   	color: WHITE;
+    	text-shadow: 0px 0px 5px PURPLE;
+}
+.sectionText5 p {
+	padding: 0px 20px 0px 20px;
+	font: 16px 'Arial', sans-serif;
+   	color: BLACK;
+}
+.sectionText5 form {
+	padding: 0px 20px 0px 20px;
+}
+.sectionText5 fieldset  {
+	font: 13px 'Lato', sans-serif; 
+	padding: 0px 10px 10px 10px;
 	border: 2px solid  GRAY;
 	border-radius: 10px;
 	background: rgba(51,51,51,0.3);
 }
-.contactoForm fieldset legend{
-	width: 200px;
-	margin: 0px;
-	padding: 8px;
+.sectionText5 fieldset legend{
+	width: 110px;
+	border: 2px solid  GRAY;
+	border-radius: 5px;
+	margin: 0px 20px 10px 10px;
+	padding: 5px;
 	font: 13px 'Lato', sans-serif;
-	background: none;
-	text-shadow: none;
+	background: rgba(0,0,0,1);
+	text-shadow:none;
 }
-.contactoForm fieldset input.radioB {
-	width: 15px; height:15px;
-}
-.contactoForm textarea {
-	width: 300px; height:130px;
+.sectionText5 textarea {
+	width: 250px; height:26px;
 	font: 13px 'Lato', sans-serif;
 	padding: 3px 3px 3px 5px;
 	border: 2px solid  WHITE;
 	border-radius: 5px;
+	resize:none;
 }
-.contactoForm input:focus {
-  	border: 2px solid #5AC4F1;
-	background-color: WHITE;
-}
-.contactoForm select {
-	width: 230px; height:34px;
-	font: 13px 'Lato', sans-serif;
-	padding: 3px 3px 3px 5px;
-	border: 2px solid  WHITE;
-	border-radius: 5px;
-}
-.contacto button.buttonSend{
-	position: absolute;
-	top: 315px; right: 25px;
-	width:60px; height:60px;
-	border: 4px inset rgba(255,230,0,1);
-	border-radius: 80%;
+
+.section5 button.buttonLink1{
+	width:300px; height:120px;
+	border: 4px inset rgba(255,255,255,1);
+	border-radius: 1%;
 	font: bold 12px 'Lato', sans-serif;
-	color: WHITE;
-	background: rgba(0,0,0,0.9);
+  	text-align: left;
+	color: BLACK;
+        background-image: url("jspanchee.jpg");
+	background-repeat: no-repeat;
+ 	background-color: #cccccc;
+ 	background-position: right;
 }
-.contacto button.buttonClean{
-	position: absolute;
-	top: 385px; right: 25px;
-	width:60px; height:60px;
-	border: 4px inset rgba(255,230,0,1);
-	border-radius: 80%;
+.section5 button.buttonLink2{
+	width:300px; height:120px;
+	border: 4px inset rgba(255,255,255,1);
+	border-radius: 1%;
 	font: bold 12px 'Lato', sans-serif;
-	color: WHITE;
-	background: rgba(0,0,0,0.9);
+	text-align: left;
+	color: BLACK;
+        background-image: url("jojgutierrezmo.jpg");
+	background-repeat: no-repeat;
+ 	background-color: #cccccc;
+ 	background-position: right;
 }
-.contacto button:hover{
-	border: 4px inset rgba(237,25,91,1);
+.section5 button.buttonLink3{
+	width:300px; height:120px;
+	border: 4px inset rgba(255,255,255,1);
+	border-radius: 1%;
+	font: bold 12px 'Lato', sans-serif;
+	text-align: left;
+	color: BLACK;
+        background-image: url("jspanchee.png");
+	box-shadow: inset 0 0 0 50vw rgba(0,0,0, 0.6);
 }
-.contacto button:active{
+.section5 button.buttonLink4{
+	width:450px; height:240px;
+	border: 4px inset rgba(255,255,255,1);
+	border-radius: 1%;
+	font: bold 12px 'Lato', sans-serif;
+        text-shadow: 2px 2px 15px WHITE;
+	text-align: left;
+	color: BLACK;
+        background-image: url("pfcardenash.jpg");
+}
+.section5 button.buttonLink5{
+	width:450px; height:240px;
+	border: 4px inset rgba(255,255,255,1);
+	border-radius: 1%;
+	font: bold 12px 'Lato', sans-serif;
+        text-shadow: 2px 2px 15px WHITE;
+	text-align: right;
+	color: BLACK;
+        background-image: url("reramirezh.jpg");
+}
+.section5 button:hover{
+	border: 4px inset rgba(0,147,212,1);
+}
+.section5 button:active{
 	border: 4px inset rgba(90,196,241,1);
-	color: rgba(90,196,241,0.80);
+	color: rgba(255,255,255,1);
 }

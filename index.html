@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Proyecto integrador de curso</title>
+	<title>Celda de Manufactura Robotizada</title>
 	<link type="text/css" rel="stylesheet" href="style.css">
 
 	<script src="jquery-3.2.1.min.js"></script>
@@ -12,81 +12,376 @@
 	<script src="script.js"></script>
 </head>
 <body>
-	<div class="banner"></div>
-	<div class="cloud1"></div>
-	<div class="cloud2"></div>
-	<div class="cloud3"></div>
-	<div class="cloud4"></div>
-	<div class="cloud5"></div>
-        <br>
-	<br>
-	<br>
-	<br>
-        <br>
-        <br>
-	<br>
-	<br>
-	<br>
+	<div class="banner"> ROBÓTICA <span style="color: #ff0000"> [</span>2021<span style="color: #ff0000">-</span>1<span style="color: #ff0000">]</span></div>
 	<br>
 	<br>
 	<div class="wrap">
 		<ul class="tabs">
-			<li class="tab1"><a href="#tab1">GESTIÓN DE PRODUCCIÓN Y AUTOMATIZACIÓN</a></li>
-			<li class="tab2"><a href="#tab2">AUTOMATIZACIÓN E INDUSTRIA 4.0</a></li>
-			<li class="tab3"><a href="#tab3">GESTIÓN Y EVALUACIÓN ECONÓMICA DE PROYECTOS</a></li>
-			<li class="tab4"><a href="#tab1">CELDA DE MANUFACTURA ROBOTIZADA</a></li>
-			<li class="tab5"><a href="#tab2">VIRTUALIZACIÓN DE FÁBRICA</a></li>
-			<li class="tab6"><a href="#tab3">CONTROLADORES INDUSTRIALES (PLC)</a></li>
-			<li class="tab7"><a href="#tab1">ACTUADORES EN AUTOMATIZACIÓN</a></li>
-			<li class="tab8"><a href="#tab2">SISTEMA DE SUPERVISIÓN SCADA</a></li>
-			<li class="tab9"><a href="#tab3">INFORMACIÓN</a></li>
+			<li class="tab1"><a href="#tab1">PRESENTACIÓN DEL PROYECTO ASIGNADO</a></li>
+			<li class="tab2"><a href="#tab2">SELECCIÓN DE ROBOTS Y HERRAMIENTAS</a></li>
+			<li class="tab3"><a href="#tab3">DISEÑO DE LA CELDA Y SOLUCIÓN PROPUESTA</a></li>
+			<li class="tab4"><a href="#tab4">ARCHIVOS ENTREGABLES Y MODELOS CAD</a></li>
+			<li class="tab5"><a href="#tab5">INTEGRANTES DEL EQUIPO Y PROFESORES</a></li>
 		</ul>
 		<div class="secciones">
 <!-- ******************************************************************************** -->
 			<article id="tab1">
-  					<div class="manual">
-					<div class="manualSearch">
-  						<legend>MANUAL</legend>
-						<p>Completa los siguientes datos</p>
+  					<div class="section1">
+					<div class="sectionText1">
+  						<legend>INTRODUCCIÓN Y OBJETIVOS DEL PROYECTO</legend>
+						<br>
+						<p>
+						<span style="color: #ffffff"> El proyecto final de la asignatura tiene como propósito general hacer uso
+						del software ABB ROBOTSTUDIO para la programación y simulación de una celda robótica 
+						integrando los conceptos trabajados en clase de laboratorio y aplicando las herramientas
+                                                de software con el objetivo de automatizar el proceso industrial asignado a cada equipo de trabajo.
+						</span></p>
+						<br><br><br><br>
+						<p> 
+						<span style= "font-weight: BOLD"> OBJETIVOS </span>
 						<br><br>
-						<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRAerXhd-zZn_w9QCcEFbZq93jK63ilNST1dWr_FSMgYjnL3HOBZCpa5_ToiYKaDRqdq1HtGjrjHXln/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="1000" height="600" scrolling="no" frameborder="0"></iframe>
+						<span style="color: #000000">• </span> Aplicar de forma práctica los conceptos sobre manipuladores seriales adquiridos durante el curso de robótica.
+						<br>						
+						<span style="color: #000000">• </span> Utilizar Robot Studio como herramienta para el control y diseño de procesos con robots industriales.
+						<br>
+						<span style="color: #000000">• </span> Diseño de rutinas y trayectorias necesarias para la realización de un proyecto de soldadura industrial.
+						<br>
+						<span style="color: #000000">• </span> Integración de mecanismos, componentes inteligentes y otros elementos de celda en aplicaciones robóticas industriales.
+						<br>
+						<span style="color: #000000">• </span> Manejo de interfaces de usuario para el control y supervisión de procesos industriales.
+						<br>
+						</p>
+						<br><br>
+						<p> 
+						<span style= "font-weight: BOLD"> DESCRIPCIÓN DEL PROYECTO </span>
+						<br><br>
+						En los proyectos E1 y E2, se van a empacar vajillas de loza o plásticas, no desechables, en cajas de cartón, para su posterior distribución. 
+						La celda tiene tres o cuatros bandas de alimentación de platos y pocillos y una de cajas de cartón, un robot toma los platos y pocillos y los 
+						coloca en sus puestos dentro de la caja. Completada la vajilla, otro robot toma las cajas y las va paletizando en una estiba. Diseñar la caja 
+						y su interior.
+						<span style= "font-weight: BOLD"> Proyecto E1: Vajilla de 4 puestos: plato hondo, plato pando, plato de postre, platillo y pocillo para café. </span>
+						<br><br>
+						<img src="BAN1.PNG">
+						</p>
 					</div>	
-				</form>
 			</article>
 <!-- ******************************************************************************** -->
 			<article id="tab2">
-				<h1>BUGS</h1>
-				<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmziC0V-OwB2lTeti0RJPXK_YcG50AvYIkbBIuf7oBzsNZWICcAMqn2qbF_1U6PIvJFLsECqTEy5AG/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="1000" height="600" scrolling="no" frameborder="0"></iframe>
+  					<div class="section2">
+					<div class="sectionText2">
+  						<legend>SELECCIÓN DE ROBOTS Y HERRAMIENTAS</legend>
+						<br>
+						<p>
+						<span style="color: #ffffff"> Con base en el enunciado del proyecto, se requiere implementar dos robots manipuladores 
+						como mínimo para la ejecución de las tareas de automatización del proceso asignado. En ésta sección se presentan los 
+						criterios de selección empleados para elegir los robots trabajados en el proyecto, además de hacer un análisis de las herramientas
+						seleccionadas para cada tarea.
+						</span></p>
+						<br><br><br><br>
+						<p> 
+						<span style= "font-weight: BOLD"> SELECCIÓN DEL ROBOT (MARCA Y REFERENCIA)</span>
+						<br><br>
+						La tarea de diseño y simulación de la celda se realizará por medio del entorno de RobotStudio de ABB, el cuál incluye en sus bibliotecas
+						predeterminadas los modelos de una amplia gamma de robots industriales, razón por
+						la cuál partimos de elegir a ABB como nuestro proveedor, la cual a su vez es una empresa especializada 
+						con una basta experiencia en el campo de la robótica, automatización, equipamientos industriales y otras tecnologías de ingeniería.
+						<br><br>
+						Considerando la alta oferta en robots industriales que brinda este proveedor, ABB dispone de una herramienta de selección denominada <span style="color: #ffffff"> Robot selector </span> 
+						desde su página web (o ingresando <a href="https://new.abb.com/products/robotics/industrial-robots/robot-selector">aquí</a>) la cuál permite filtrar 
+						los diferentes modelos empleando como principales criterios de selección: la aplicación, la carga útil y el alcance máximo. 												
+						</p>
+						<br>
+						<p><img src="ABBRobotSelector.PNG"></p>
+						<br>
+						<table class="RobotSelector"><tr>
+						<td style="width:25%;"><img src="ABB.png" width="200"  style="border:none;"></td>
+						<td style="width:45%;">Arc welding, Assembly, Cleaning, Coating, Collaboration, Cutting, Deburring, Depalletizing, Die casting, Dispensing, Enamelling, Full layer palletizing, Glazing, Gluing, Grinding, 
+						Heavy arc welding, Injection moulding, Insertion, Item picking, Kitting, Loading, Loading and unloading, Machine tending, Material handling, Measuring, Packing, Painting, Palletizing, 
+						Parts inspection, Picking, Polishing, Powdering, Powertrain assembly, Premachining, Press automation, Press brake tending, Press tending, Rubber insertion, Screw driving, Screwdriving, 
+						Sealing, Small parts assembly, Spot welding, Spraying, Testing, Unloading, Welding, Packing.</td>
+						<td> Up to 7 (kg)<br>	
+						     7 - 16 (kg)<br>
+						     16 - 60 (kg)<br>
+						     60 - 225 (kg)<br>
+						     Over 225 (kg)<br>
+						</td>
+						<td>
+						     Up to 1.55 (m)<br>	
+						     Up to 1.8 (m)<br>
+						     1.8 - 2.55 (m)<br>	
+						     Over 2.55 (m)<br>	
+						</td>
+						</tr></table>
+						<br><br>
+						<p><span style= "font-weight: BOLD"> 1ER ROBOT. </span> Para la primer tarea, el robot debe tomar cada una de las 20 piezas que conforman la 
+						vajilla de 4 puestos desde unas bandas de alimentación y colocarlas en orden dentro de la caja de cartón. Encontramos varias aplicaciones
+						que engloban esta acción, como lo son Material handling o Packing, por tanto buscamos una referencia de propósito general. Respecto a la 
+						carga útil, el robot sólo manipulará una pieza a la vez, y la pieza de vajilla más pesada no alcanza ni 1 kilogramo de peso, por lo cual
+						considerando un peso promedio de la herramienta la opción más adecuada es "up to 7(kg)". Finalmente, para el alcance del robot, dado que 
+						se requiere alcanzar la piezas desde la respectiva banda para su posterior embalaje, se eligen entre las opciones disponibles al robot de
+						mayor alcance, el cual corresponde al IRB 1600.</p>
+						<br><br>
+
+						<br><br>
+						<p><span style= "font-weight: BOLD"> 2DO ROBOT. </span> Para la segunda tarea, el robot debe tomar una a una las cajas de cartón desde la
+						banda de salida y realizar el proceso de palletizado sobre una estiva de madera. La aplicación del robot para este caso será de Palletizing.
+ 						Para determinar la carga útil, se debe tener en cuenta que el robot manipulará una caja a la vez, cada una con las 20 piezas de vajilla 
+						debidamente embaladas en la tarea anterior, y considerando un peso estimado por cada caja no mayor de 10kg siendo conservadores, razón 
+						por la cual y considerando un peso promedio de la herramienta la opción elegida es "7-16 (kg)". Con éstos filtros limitamos la selección
+						a dos opciones, donde la primera que corresponde al IRB 2600 tiene una carga útil de entre 12-20 kg. Finalmente, para el alcance del robot, 
+						se requiere que el espacio de trabajo contenga la estiba para el posicionamiento de las cajas, por lo cuál se considera que el alcance de  	
+						1.65-1.85 m del IRB 2600 es suficiente para esta tarea.</p>
+						<br><br>				
+						<p><span style= "font-weight: BOLD"> SELECCIÓN DE LAS HERRAMIENTAS </span>
+						<br><br>
+						La selección del tipo de herramienta se consideró partiendo de una búsqueda preliminar de máquinas empleadas en este tipo de industria y 
+						considerando las propiedades físicas de la pieza de trabajo a manipular. Para la primer tarea, se estableció que los platos y pocillos serían 
+						de loza o porcelana, un material recubierto e impermeabilizado con poca adhesión, y la geometría convencional de la vajilla dificulta su manipulación 
+						con un gripper de pinza convencional al no poder garantizar la posición tras el agarre. Bajo estas mismas razones, se decidió emplear una gripper de
+						vacío, dado que la superficie lisa en el centro de los platos y al interior del pocillo facilitan el agarre por succión desde una sola cara de la pieza. 
+						Para la segunda tarea, considerando el ejemplo realizado en clase de laboratorio y haciendo una búsqueda general, encontramos que estas mismas 
+						herramientas de vacío son bastante utilizadas para las aplicaciones de palletizado, y las características de la herramienta como en general el tamaño y
+						la cantidad de copas de succión aumentarán dependiendo del peso de la carga a manipular.
+						<br>
+						Con esta selección de herramientas, se procedió a realizar una búsqueda de fabricantes y referencias para tener una pespectiva más amplia de estas 
+						herramientas, y partimos de los diseños CAD de la línea de grippers de vacio disponibles por parte del proovedor ROBOTIQ, sin embargo, algunas 
+						características se modificaron para poder adaptarlas a la tarea en cuestión y modelar la herramienta para su simulación en el entorno RobotStudio®.
+						<br><br>
+						</p>
+						<p><span style= "font-weight: BOLD"> GRIPPERS DE VACÍO [ROBOTIQ]</span></p><br>
+						<p><img src="gripperx1.PNG"></p><br>
+						<p><img src="gripperx4.PNG"></p><br>
+					</div></div>
 			</article>
 <!-- ******************************************************************************** -->
 			<article id="tab3">
-                                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRhyDDFOHx6psHkgO0vRFSnCqr27SJkm57VA9eOSZwfRLEGlDUxccaV9_VnQaoxc5-2dPoq3cc2t6Fb/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false "width="1000" height="600" scrolling="no" frameborder="0"></iframe>
-				<form action="https://docs.google.com/forms/d/e/1FAIpQLSfkC-CnBbb7JE2oLn07oUoAep87DUzKPF-SrY6UN8icTZ2cug/formResponse" target="_self" method="POST">
-					<div class="contacto">
-					<div class="contactoForm">
-  						<legend>CONTACTO</legend>
-						<p>Completa los siguientes datos antes de derivar:</p>
+  					<div class="section3">
+					<div class="sectionText3">
+  						<legend>DISEÑO Y SIMULACIÓN DE LA CELDA</legend>
 						<br>
+						<p>
+						<span style="color: #ffffff"> El proyecto final de la asignatura tiene como propósito general hacer uso
+						del software ABB ROBOTSTUDIO para la programación y simulación de una celda robótica 
+						integrando los conceptos trabajados en clase de laboratorio y aplicando las herramientas
+                                                de software con el objetivo de automatizar el proceso industrial asignado a cada equipo de trabajo.
+						</span></p>
+						<br><br>
+						<br><hr><br>
+						<p><span style= "font-weight: BOLD"> SOLUCIÓN PROPUESTA</span><br><br>
+						En el siguiente video se presenta de forma resumida la simulación completa de la celda robótica desde
+						el entorno de RobotStudio® realizando la secuencia de automatización para el proceso asignado y describiendo 
+						la estructura y distribución de la celda, conexión de componentes inteligentes, entradas y salidas digitales, 
+						programa de código principal, y demás elementos incorporados para la ejecución del proyecto.
+						<br><br>
+						<iframe width="978" height="510" src="https://www.youtube.com/embed/4hXARXhEkuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<br><br></p>
+						<br><hr><br>
+						<p>
+						<span style= "font-weight: BOLD"> PLANTEAMIENTO INICIAL DE LA CELDA </span>
+						<br><br>
+						En primer lugar, partimos de la información designada para establecer un ideal de la celda de trabajo, listando los 
+						elementos fundamentales para la automatización del proceso y fijando los requerimientos de la celda, y así esbozar 
+						las primeras alternativas de diseño.
+						  
+						<br><br></p>
+						<br><hr><br>
+						<p>
+						<span style= "font-weight: BOLD"> ESTRUCTURA Y ELEMENTOS DE LA CELDA </span>
+						<br><br>
+						Con base en el ideal planteado por el equipo, partimos de realizar la búsqueda de los modelos CAD para los diversos elementos 
+						que conformarían la celda de trabajo, comenzando por insertar los modelos de los robots previamente seleccionados desde la 
+						Biblioteca ABB y los diseños CAD de las herramientas ya adaptados y configurados como tool para su uso en RobotStudio®. <br> 
+						Desde este punto, comenzamos a incorporar otros elementos fundamentales para la simulación, partiendo por el material inicial que
+						corresponde a las 5 piezas de vajilla, las bandas transportadoras de alimentación, un modelo preliminar de la caja y la banda
+						para el ingreso de las cajas a la celda. A medida que se insertaban estos elementos se iban sumando otros componentes gráficos 
+						que pese a no intervenir directamente en el proceso harían de complemento en el diseño de la celda, como
+						vallas de protección, operarios y máquinas, diversos elementos de seguridad, entre otros. <br>
+						Una vez contábamos con todos los elementos previstos para la primer tarea, se procedió a decidir la estructura de la celda y 
+						reorientar el segundo robot para incorporar las estibas de madera y la cinta transportadora por cadena, de tal modo que se 
+						conectara la salida de la primer etapa con la entrada para la segunda, conservando la secuencia y manteniendo las distancias 
+						de seguridad y áreas reservadas para el movimiento del personal. A lo largo de todo el diseño se continuó agregando y adaptando
+						componentes graficos para la ambientación de la celda.
+						<br><br>
+						<img src="BAN2.PNG"><br><br></p>
+						<br><hr><br>
+						<p>
+						<span style= "font-weight: BOLD"> COMPONENTES INTELIGENTES E INTERCONEXIONES </span>
+						<br><br>
+						Conforme se avanzaba con la construcción de la celda, se asignaron las propiedades físicas y cuerpos dinámicos para los componentes
+						que interactuarían durante la ejecución de cada tarea, omitiendo los complementos que solo se agregaron como apoyo visual. Partiendo
+						del ejemplo final realizado durante las clases de laboratorio, se crearon múltiples grupos de componentes con el fin de controlar la
+						secuencia de las diferentes tareas y su interacción con cada robot. <br>
+						En un primer grupo, se comenzó por incluir las bandas de alimentación junto con las superficies de transporte que permitirían el desplazamiento
+						de las piezas de la vajilla hasta el extremo de la banda sumado al componente de física que establece la velocidad de movimiento. 
+						Posterior a esto, se incluyeron dos sensores de línea por cada banda, un primer sensor en un punto medio asignado a un componente de fuente para 
+						garantizar la continua alimentación de las piezas, y un segundo sensor al final de cada banda para controlar el avance de las piezas y
+					 	a su vez conectado a un par de indicadores led que se alternan dependiendo del estado de la banda. Este grupo por tanto contiene cinco
+						bloques de secuencia idénticos, cada uno asociado a una de las bandas de alimentación.
+						En un segundo grupo, se agregaron los mismos componentes inteligentes, pero en este caso para una única banda de alimentación de cajas, 
+						con la única diferencia de que la activación del último sensor de línea no está limitado únicamente a la posición de las cajas, sino 
+						también a una entrada digital controlada por el programa principal, el cual se detallará en la siguiente sección.
+						Continuando con ésta lógico, se agregó un tercer grupo con la misma secuencia de componentes inteligentes, pero este asociado a la banda de alimentación
+						de estibas de madera, la cual avanzará hasta alcanzar determinada posición y su próximo avance estará determinado por el programa en ejecución.
+						Finalmente, se crearon un cuarto y un quinto grupo de componentes inteligentes, en este caso asociados a cada una de las herramientas. Para esta lógica,
+						se dispone de un sensor en línea conectado al TCP de cada uno de los robots, de modo que al detectar un cuerpo sólido durante la ejecución del programa, 
+						se genera un enlazamiento con el objeto detectado. En el programa principal y por medio de entradas y salidas digitales se controla el estado de la 
+						herramienta, con el fin de liberar el objeto enlazado cuando se haya alcanzado una posición determinada.
+						Con ésta serie de componentes inteligentes, fue posible establecer los movimientos e interacciones entre las piezas y demás elementos de la celda 
+						distintos a los vinculados al controlador de los robots.
+						<br><br></p>
+						<br><hr><br>
+						<p>	
+						<span style= "font-weight: BOLD"> ENTRADAS/SALIDAS DIGITALES Y PROGRAMA EN RAPID </span>
+						<br><br>
+						En este punto, se requiere relacionar todas las secuencias e interacciones de movimiento generadas en la 
+						celda por medio de los componentes inteligentes y vincularlas con las trayectorias del robot para realizar cada tarea.
+						Con el fin de establecer ésta comunicación con el controlador, se crearon entradas y salidas digitales para determinar los punto de partida 
+						de cada tarea y se conectaron en la lógica de estación, de modo que desde el código de RAPID ninguno de los robots realice
+						ninguna acción hasta que reciba la señal digital por parte de los sensores de linea de cada grupo de componentes 
+						inteligentes establecidos en la sección anterior. Con esta lógica, el primer robot permanecerá estático hasta que una de las 
+						cajas no active el sensor de línea de la banda de alimentación de cajas, indicando al controlador que hay una caja en posición
+						para proceder a realizar la primer tarea. Del mismo modo, el controlador una vez ejecutado el ciclo del programa para las 20 piezas, 
+						enviará la señal para desactivar el sensor de línea y permitir que la caja continúe avanzando sobre la banda auxiliar hasta activar 
+						el sensor de línea que da comienza a la ejecución de la segunda tarea.
+						<br><br></p>
+						<br><hr><br>
+					</div>
+			</article>
+<!-- ******************************************************************************** -->
+			<article id="tab4">
+  					<div class="section4">
+					<div class="sectionText4">
+  						<legend>ENTREGABLES CAD Y ROBOTSTUDIO</legend>
 						<br>
-						<fieldset>
-							<legend align="center">¿Te es útil la herramienta?</legend>
-							<input type="radio" class="radioB" name="entry.1204117259" value="Sí"> Sí &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" class="radioB" name="entry.1204117259" value="No"> No	 <br><br>		
-						</fieldset>
-						<fieldset>
-							<legend align="center">¿Con qué frecuencia la utilizas?</legend>
-							<input type="radio" class="radioB" name="entry.656839720" value="A diario"> A diario <br>
-							<input type="radio" class="radioB" name="entry.656839720" value="Una vez a la semana"> Una vez a la semana <br>
-							<input type="radio" class="radioB" name="entry.656839720" value="Una vez al mes"> Una vez al mes <br>
-							<br>			
-						</fieldset>
+						<p><span style="color: #ffffff"> En ésta sección se incluyen los enlaces de descarga para todos los archivos generados en el desarrollo de la celda
+						robótica conforme se solicitan entre los entregables requeridos en el enunciado del proyecto final. Los enlaces presentados corresponden a los archivos cargados 
+						en el repositorio de GitHub, el cuál también es accesible ingresando  <a href="https://github.com/ROBOTICA2021-1/PROYECTO-FINAL/tree/main/Entregables">aquí</a>.
+
+						</span></p>
+						<br><br>
+						<br><hr><br>
+						<p><span style= "font-weight: BOLD">PACK AND GO</span>
+						<form action="https://drive.google.com/file/d/1_3yaj4Gw34wDi2sno9XdANUCZxV6WAV6/view?usp=sharing">
+							<button class="Download">DESCARGAR</button><br>
+						</form></p><br>
+						<p>Para poder compartir la celda completa junto con todos los archivos dependientes del proyecto, se crea un paquete de la estación
+						activa que incluye los controladores virtuales, las bibliotecas y demás medios adicionales en un único archivo Pack and Go, en formato.RSPAG. 
+						Esta caracterítica de RobotStudio® permite empaquetar el proyecto para compartirlo con otras personas sin omitir ningún posible archivo 
+						necesario para su correcta ejecución.</p>
 						<br>
-						<textarea id="comment" name="entry.2115571736" size="50" placeholder="¿Qué proceso crees que le haga falta?" autocomplete="off" required></textarea>
-						<button type="submit" class="buttonSend" id="btnSend">ENVIAR</button>
-						<button type="reset" class="buttonClean" id="btnClean">BORRAR</button>
-						</div>
-					</div>	
-				</form>
+						<p><img src="EntregablesRS1.PNG"></p>
+						<br><hr><br>
+
+						<p><span style= "font-weight: BOLD">LIBRERÍAS DE ROBOTSTUDIO</span>
+						<form action="https://github.com/ROBOTICA2021-1/PROYECTO-FINAL/tree/main/Entregables/Librer%C3%ADas">
+							<button class="Download">DESCARGAR</button><br>
+						</form></p><br> 
+						<p>Para los elementos que componen la celda de trabajo, se utilizaron múltiples modelos CAD de uso gratuito disponibles en 
+						diferentes repositorios web y en formato compatible para su edición desde Autodesk Inventor®. Estos diseños se modificaron 
+						acorde a los requerimientos de nuestro proyecto y se guardaron en un formato .SAT para ser importados como geometría desde 
+						RobotStudio®. Finalmente, se guardaron como librerías en formato .RSLIB para su posterior uso en la contrucción de la celda
+                                                robótica.</p>
+						<br>
+						<p><img src="EntregablesRS2.png"></p>
+						<br><hr><br>
+
+						<p><span style= "font-weight: BOLD">ARCHIVOS DE PROGRAMA RAPID</span>
+						<form action="https://github.com/ROBOTICA2021-1/PROYECTO-FINAL/tree/main/Entregables/Programas%20RAPID">
+							<button class="Download">DESCARGAR</button><br>
+						</form></p><br> 
+						<p>Dado que se implementaron dos robots manipuladores con un único controlador, se generaron dos programas de código 
+						por medio de RAPID (T_ROB1 y T_ROB2) en el entorno de RobotStudio®, cada uno de estos archivos contiene la definición de los puntos, 
+						trayectorias, herramientas, etc., y en general toda la información correspondiente a las tareas de cada uno de los robots. </p>
+						<br>
+						<p><img src="EntregablesRS3.PNG"></p>
+						<br><hr><br>
+					</div>
+			</article>
+<!-- ******************************************************************************** -->
+			<article id="tab5">
+  					<div class="section5">
+					<div class="sectionText5">
+  						<legend>EQUIPO DE TRABAJO Y PROFESORES</legend>
+						<br>
+						<p>
+						<span style="color: #ffffff"> El trabajo presentado corresponde al proyecto final para la asignatura de <span style= "font-weight: BOLD">Robótica</span> 
+						a cargo del Departamento de Ingeniería Mecánica y Mecatrónica de la Universidad Nacional de Colombia para el primer semestre del año 2021.
+						El equipo de trabajo se encuentra conformado por tres estudiantes del pregrado de ingeniería mecatrónica. 
+						</span></p>
+						<br><br><br><br>
+						<p> 
+						<hr>
+						<br><br>
+						<table>
+  						<tr>
+  						<td>
+						<form action="https://www.linkedin.com/in/john-sebastian-panche-estupi%C3%B1%C3%A1n-1647ba1b2/">
+							<button class="buttonLink1">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: BLUE"> jspanchee </span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp; John Sebastian Panche Estupiñán <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Correo: jspanchee@unal.edu.co <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Estudiante de Ingeniería Mecatrónica
+							</button><br>
+						</form></p><br></td>
+  						<td>
+						<form action="https://www.linkedin.com/in/jos%C3%A9-jairo-guti%C3%A9rrez-moreno-239308101/">
+							<button class="buttonLink2">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: BLUE"> jojgutierrezmo </span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp; Jose Jairo Gutiérrez Moreno <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Correo: jojgutierrezmo@unal.edu.co <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Estudiante de Ingeniería Mecatrónica
+							</button><br>
+						</form></p><br></td>
+  						<td>
+						<form action="">
+							<button class="buttonLink3">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: BLUE"> homorenoj </span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp; Henry Omar Moreno Jiménez <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Correo: homorenoj@unal.edu.co <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Estudiante de Ingeniería Mecatrónica
+							</button><br>
+						</form></p><br></td>
+						</tr>
+						</table>
+						<br>
+						<hr>
+						<br>
+						<table>
+  						<tr>
+  						<td>
+						<form action="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000221996">
+							<fieldset>
+ 							<legend>&nbsp;&nbsp;&nbsp;&nbsp;PROFESOR</legend>
+							<button class="buttonLink4">
+							&nbsp;&nbsp;&nbsp;&nbsp;PEDRO FABIÁN CÁRDENAS HERRERA <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Correo: pfcardenash@unal.edu.co <br>		
+							&nbsp;&nbsp;&nbsp;&nbsp; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;INGENIERO <br>
+							</button><br><br>
+							Área de actuación: Robótica Industrial serial
+							y paralela, Manipuladores móviles, Realidad
+							virtual y Motion Planning, Sistemas mecatrónicos.
+							</fieldset>
+						</form></td>
+    						<td>
+						<form action="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000216666">
+							<fieldset>
+ 							<legend>&nbsp;&nbsp;&nbsp;&nbsp;PROFESOR</legend>				
+							<button class="buttonLink5">
+							RICARDO EMIRO RAMÍREZ HEREDIA&nbsp;&nbsp;&nbsp;&nbsp; <br>
+							Correo: reramirezh@unal.edu.co&nbsp;&nbsp;&nbsp;&nbsp; <br>		
+							&nbsp;&nbsp;&nbsp;&nbsp; <br>
+							INGENIERO&nbsp;&nbsp;&nbsp;&nbsp; <br>
+							</button><br><br>
+							Área de actuación: Robótica industrial,
+							Robótica móvil, Automatización industrial,
+							Diseño de máquinas.
+							</fieldset>
+						</form></td>  
+						</tr>
+						</table>	
+						<br><hr>			
+					</div>
 			</article>
 <!-- ******************************************************************************** -->
 		</div>
