@@ -16,11 +16,11 @@
 	<br>
 	<div class="wrap">
 		<ul class="tabs">
-			<li class="tab1"><a href="#tab1">PRESENTACIÓN DEL PROYECTO ASIGNADO</a></li>
-			<li class="tab2"><a href="#tab2">SELECCIÓN DE ROBOTS Y HERRAMIENTAS</a></li>
+			<li class="tab1"><a href="#tab1">INTRODUCCIÓN Y OBJETIVOS DE LA CMR</a></li>
+			<li class="tab2"><a href="#tab2">HOJA DE RUTA PARA EL DISEÑO DE CELDAS</a></li>
 			<li class="tab3"><a href="#tab3">DISEÑO DE LA CELDA Y SOLUCIÓN PROPUESTA</a></li>
-			<li class="tab4"><a href="#tab4">ARCHIVOS ENTREGABLES Y MODELOS CAD</a></li>
-			<li class="tab5"><a href="#tab5">INTEGRANTES DEL EQUIPO Y PROFESORES</a></li>
+			<li class="tab4"><a href="#tab4">ANÁLISIS DE RIESGOS Y SEGURIDAD</a></li>
+			<li class="tab5"><a href="#tab5">ARCHIVOS ENTREGABLES Y MODELOS CAD</a></li>
 		</ul>
 		<div class="secciones">
 <!-- ******************************************************************************** -->
@@ -39,16 +39,16 @@
 						<p> 
 						<span style= "font-weight: BOLD"> OBJETIVOS </span>
 						<br><br>
-						<span style="color: #000000">• </span> Aplicar de forma práctica los conceptos sobre manipuladores seriales adquiridos durante el curso de robótica.
-						<br>						
-						<span style="color: #000000">• </span> Utilizar Robot Studio como herramienta para el control y diseño de procesos con robots industriales.
-						<br>
-						<span style="color: #000000">• </span> Diseño de rutinas y trayectorias necesarias para la realización de un proyecto de soldadura industrial.
-						<br>
-						<span style="color: #000000">• </span> Integración de mecanismos, componentes inteligentes y otros elementos de celda en aplicaciones robóticas industriales.
-						<br>
-						<span style="color: #000000">• </span> Manejo de interfaces de usuario para el control y supervisión de procesos industriales.
-						<br>
+						En el siguiente documento se resume el trabajo de diseño de la Celda de Manufactura Robotizada a implementar en el proyecto, comenzando por 
+						la hoja de ruta grupal para el diseño general de una CMR describiendo cada uno de los pasos 
+						a tener presente y formulada a partir del trabajo individual. Acorde a la hoja de ruta, 
+						se seleccionan las operaciones sobre las cuáles se enfocará el trabajo de la celda, analizando 
+						la viabilidad de las tareas a automatizar por medio de la celda junto con el diagrama de operaciones y máquinas, generando un esquema preliminar 
+						de la alternativa dominante con la distribución de operaciones y máquinas en las estaciones, 
+						descripción de entradas y salidas de producto, acceso de personal, etc. Continuando, se presentan los criterios empleados para la selección de los 
+						robots manipuladores y el posicionador para la celda. En la hoja siguiente se encuentra la matriz de riesgos en donde se analiza cada uno de los 
+						peligros dependiendo de su nivel de riesgo y se sugieren las alternativas y elementos de protección y seguridad que se implementarán finalmente 
+						en la celda.
 						</p>
 						<br><br>
 						<p> 
@@ -156,16 +156,64 @@
 			<article id="tab3">
   					<div class="section3">
 					<div class="sectionText3">
-  						<legend>DISEÑO Y SIMULACIÓN DE LA CELDA</legend>
+  						<legend>DISEÑO Y CONSTRUCCIÓN DE LA SOLUCIÓN</legend>
 						<br>
 						<p>
 						<span style="color: #ffffff"> El proyecto final de la asignatura tiene como propósito general hacer uso
-						del software ABB ROBOTSTUDIO para la programación y simulación de una celda robótica 
-						integrando los conceptos trabajados en clase de laboratorio y aplicando las herramientas
-                                                de software con el objetivo de automatizar el proceso industrial asignado a cada equipo de trabajo.
+						del software ABB ROBOTSTUDIO para la programación y simulación de una celda de manufactura robotizada 
+						integrando los conceptos trabajados en clase y aplicando las herramientas de software con el objetivo de 
+						automatizar determinadas operaciones de la línea de fabricación de bicicletas.
 						</span></p>
 						<br><br>
 						<br><hr><br>
+						
+						<p>
+						<span style= "font-weight: BOLD"> SELECCIÓN Y AUTOMATIZACIÓN DE LA OPERACIÓN </span>
+						<br><br>
+						Conforme la hoja de ruta, los primeros pasos se realizaron a partir del análisis de operaciones llevado 
+						a cabo en la sección de <span style= "font-weight: BOLD"> Gestión de la producción y automatización </span>, en donde modelamos cada operación por 
+						estación de trabajo y las subtareas requeridas para cada uno de los procesos de manufactura. Partiendo de 
+						esta información, análizamos las tareas que consumen un mayor tiempo de ciclo, la practicidad de automatizarlas 
+						por medio de celdas robotizada y las tareas sobre las cuáles existen precedentes y por tanto se comercializan 
+						los equipos y herramientas necesarias para su implementación, enfoncándonos en procesos repetitivos y descartando 
+						tareas de montaje y ensamble debido a la necesidad de un equipo más especializado y las limitaciones para 
+						inspeccionar cada uno de los productos terminados sin la intervención de un operario humano. <br>
+						Posteriormente, el equipo de trabajo se reunió para debatir las opciones más viables, y finalmente se seleccionaron 
+						las operaciones de soldadura de marcos y la limpieza de las piezas soldadas, operaciones consecutivas para así 
+						integrarlas a una única celda de manufactura.											 
+						<br></p>
+						<br><hr><br>
+
+						<p>
+						<span style= "font-weight: BOLD"> ASPECTOS GENERALES DE LA CELDA </span>
+						<br><br>
+						Se plantea el diseño de una celda para integrar dos estaciones, una de soldadura ① y otra de limpieza ② (lijado, 
+						afinado y pulido). Considerando las características particulares de cada proceso, el entorno de trabajo requerido 
+						y junto con el equipo y herramientas necesarios, un sólo manipulador será insuficiente y poco recomendado para 
+						trabajar simultáneamente en dos entornos de trabajo tan diferentes, dado que ésto implicaría un cambio constante 
+						de herramientas y un alto alcance ó la implementación de un séptimo eje (o riel) para desplazarse entre un espacio 
+						de trabajo y otro. Por ésta razón, se plantean como mínimo dos robots manipuladores para que cada uno ejecute una 
+						tarea en un espacio adaptado para la respectiva operación, además de un posible tercer mecanismo para controlar la 
+						entrada y salida de material a la celda y realizar el transporte de piezas entre una estación y otra.																		 
+						<br></p>
+						<br><hr><br>
+
+						<p>
+						<span style= "font-weight: BOLD"> DISEÑO PRELIMINAR DE LA CELDA DE TRABAJO </span>
+						<br><br>
+						Partiendo del diagrama de flujo y maquinaria, se esboza un diseño preliminar de la celda de manufactura robotizada, 
+						estableciendo la secuencia de procesos en la entrada y salida del material y la distribución general de las máquinas 
+						y puestos de trabajo en la celda. Se definen las dos estaciones con su respectivo manipulador en el centro de cada 
+						una de estas para cubrir el mayor espacio de trabajo posible y adaptar las medidas de seguridad necesarias. Ambos 
+						espacios de trabajo estarán separados por un tercer mecanismo que permitirá el intercambio de material entre ambas 
+						estaciones. El flujo de entrada y salida de material se encuentra en la segunda estación, dado que el primer robot 
+						no estará considerado para la manipulación y transporte de las piezas en la celda. La celda en su totalidad se encontrará 
+						cercada por barreras físicas acorde a la matriz que se detallará en el análisis de riesgos.												 
+						<br><br>
+						<img src="CMR_1.PNG"><br><br></p>
+						<br><hr><br>
+
+						<hr><hr><hr><hr>
 						<p><span style= "font-weight: BOLD"> SOLUCIÓN PROPUESTA</span><br><br>
 						En el siguiente video se presenta de forma resumida la simulación completa de la celda robótica desde
 						el entorno de RobotStudio® realizando la secuencia de automatización para el proceso asignado y describiendo 
@@ -175,15 +223,7 @@
 						<iframe width="978" height="510" src="https://www.youtube.com/embed/4hXARXhEkuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<br><br></p>
 						<br><hr><br>
-						<p>
-						<span style= "font-weight: BOLD"> PLANTEAMIENTO INICIAL DE LA CELDA </span>
-						<br><br>
-						En primer lugar, partimos de la información designada para establecer un ideal de la celda de trabajo, listando los 
-						elementos fundamentales para la automatización del proceso y fijando los requerimientos de la celda, y así esbozar 
-						las primeras alternativas de diseño.
-						  
-						<br><br></p>
-						<br><hr><br>
+				
 						<p>
 						<span style= "font-weight: BOLD"> ESTRUCTURA Y ELEMENTOS DE LA CELDA </span>
 						<br><br>
@@ -260,7 +300,7 @@
 						<br><br>
 						<br><hr><br>
 						<p><span style= "font-weight: BOLD">PACK AND GO</span>
-						<form action="https://drive.google.com/file/d/1_3yaj4Gw34wDi2sno9XdANUCZxV6WAV6/view?usp=sharing">
+						<form action="https://drive.google.com/file/d/1vpiu7skGSQmfeoCGRNPfb4PUzfl0RlrD/view?usp=sharing">
 							<button class="Download">DESCARGAR</button><br>
 						</form></p><br>
 						<p>Para poder compartir la celda completa junto con todos los archivos dependientes del proyecto, se crea un paquete de la estación
