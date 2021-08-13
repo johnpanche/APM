@@ -260,16 +260,6 @@ ul.tabs li a{
 	padding: 5px 5px 5px 5px;
 }
 
-.sectionText2 table.RobotSelector {
-  	margin-left: auto;
-  	margin-right: auto;
-  	border: 2px solid WHITE;
-  	width: 95%;
-	text-align: center;
-  	background-color: rgba(0,0,0,0.8);
-	font: 12px 'Arial', sans-serif;
-   	color: WHITE;
-}
 /**********************************************************/
 
 .section3 {
@@ -312,6 +302,34 @@ ul.tabs li a{
 .sectionText3 iframe {
 	border: 2px solid rgba(131,22,11,0.95);
 	padding: 5px 5px 5px 5px;
+}
+
+.sectionText3 table.RobotSelector {
+  	margin-left: auto;
+  	margin-right: auto;
+  	border: 2px solid WHITE;
+  	width: 95%;
+	text-align: center;
+  	background-color: rgba(0,0,0,0.8);
+	font: 12px 'Arial', sans-serif;
+   	color: WHITE;
+}
+
+.sectionText3 fieldset  {
+	padding: 5px 5px 10px 5px;
+	border: 2px solid  GRAY;
+	border-radius: 10px;
+	background: rgba(51,51,51,0.3);
+}
+.sectionText3 fieldset legend{
+	width: 350px;
+	border: 2px solid  GRAY;
+	border-radius: 5px;
+	margin: 20px 10px 10px 10px;
+	padding: 5px;
+	font: 16px 'Arial', sans-serif;
+	background: rgba(0,0,0,1);
+	text-shadow:none;
 }
 /**********************************************************/
 
@@ -404,23 +422,7 @@ ul.tabs li a{
 .sectionText5 form {
 	padding: 0px 20px 0px 20px;
 }
-.sectionText5 fieldset  {
-	font: 13px 'Lato', sans-serif; 
-	padding: 0px 10px 10px 10px;
-	border: 2px solid  GRAY;
-	border-radius: 10px;
-	background: rgba(51,51,51,0.3);
-}
-.sectionText5 fieldset legend{
-	width: 110px;
-	border: 2px solid  GRAY;
-	border-radius: 5px;
-	margin: 0px 20px 10px 10px;
-	padding: 5px;
-	font: 13px 'Lato', sans-serif;
-	background: rgba(0,0,0,1);
-	text-shadow:none;
-}
+
 .sectionText5 textarea {
 	width: 250px; height:26px;
 	font: 13px 'Lato', sans-serif;

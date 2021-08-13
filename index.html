@@ -79,28 +79,7 @@
 						los diferentes modelos empleando como principales criterios de selección: la aplicación, la carga útil y el alcance máximo. 												
 						</p>
 						<br>
-						<p><img src="ABBRobotSelector.PNG"></p>
-						<br>
-						<table class="RobotSelector"><tr>
-						<td style="width:25%;"><img src="ABB.png" width="200"  style="border:none;"></td>
-						<td style="width:45%;">Arc welding, Assembly, Cleaning, Coating, Collaboration, Cutting, Deburring, Depalletizing, Die casting, Dispensing, Enamelling, Full layer palletizing, Glazing, Gluing, Grinding, 
-						Heavy arc welding, Injection moulding, Insertion, Item picking, Kitting, Loading, Loading and unloading, Machine tending, Material handling, Measuring, Packing, Painting, Palletizing, 
-						Parts inspection, Picking, Polishing, Powdering, Powertrain assembly, Premachining, Press automation, Press brake tending, Press tending, Rubber insertion, Screw driving, Screwdriving, 
-						Sealing, Small parts assembly, Spot welding, Spraying, Testing, Unloading, Welding, Packing.</td>
-						<td> Up to 7 (kg)<br>	
-						     7 - 16 (kg)<br>
-						     16 - 60 (kg)<br>
-						     60 - 225 (kg)<br>
-						     Over 225 (kg)<br>
-						</td>
-						<td>
-						     Up to 1.55 (m)<br>	
-						     Up to 1.8 (m)<br>
-						     1.8 - 2.55 (m)<br>	
-						     Over 2.55 (m)<br>	
-						</td>
-						</tr></table>
-						<br><br>
+						
 						<p><span style= "font-weight: BOLD"> 1ER ROBOT. </span> Para la primer tarea, el robot debe tomar cada una de las 20 piezas que conforman la 
 						vajilla de 4 puestos desde unas bandas de alimentación y colocarlas en orden dentro de la caja de cartón. Encontramos varias aplicaciones
 						que engloban esta acción, como lo son Material handling o Packing, por tanto buscamos una referencia de propósito general. Respecto a la 
@@ -202,6 +181,97 @@
 						<br><br>
 						<img src="CMR_1.PNG"><br><br></p>
 						<br><hr><br>
+
+						<p>
+						<span style= "font-weight: BOLD"> SELECCIÓN DE ROBOTS </span>
+						<br><br>
+						Dado el enfoque tomado desde el módulo de Celdas de Manufactura Robotizadas y la experiencia con el software RobotStudio 
+						de ABB, se decide en primer lugar que la simulación, cotización y adquisición de los manipuladores se realizará con este 
+						proveedor, dado que además de suministrarnos las licencias y herramientas de software necesarias para el diseño detallado, 
+						es una empresa especializada con una basta experiencia en el campo de la robótica, automatización, equipamientos industriales 
+						y otras tecnologías de ingeniería. Considerando la alta oferta en robots que brinda este proveedor, ABB dispone de una 
+						herramienta de selección denominada <span style= "font-weight: BOLD">Robot selector</span> desde su página web (ingresando 
+						<a href="https://new.abb.com/products/robotics/industrial-robots/robot-selector">aquí</a>) la cuál permite filtrar los diferentes 
+						modelos empleando como principales criterios de selección: la aplicación para la cuál se va a emplear, la carga útil que 
+						manipulará el efector final y el alcance máximo. También se cuenta con un aplicativo para el cálculo y validación de la carga 
+						llamado RobotLoad, sin embargo para el uso del mismo se requiere primero haber seleccionado el robot de trabajo entre los modelos 
+						admitidos y contar con las especificaciones de CoG, Jx Jy Jz, y TCP de la herramienta.								
+						<br><br>
+						<img src="ABBRobotSelector.PNG">
+						<br>
+						<table class="RobotSelector"><tr>
+						<td style="width:25%;"><img src="ABB.png" width="200"  style="border:none;"></td>
+						<td style="width:45%;">Arc welding, Assembly, Cleaning, Coating, Collaboration, Cutting, Deburring, Depalletizing, Die casting, Dispensing, Enamelling, Full layer palletizing, Glazing, Gluing, Grinding, 
+						Heavy arc welding, Injection moulding, Insertion, Item picking, Kitting, Loading, Loading and unloading, Machine tending, Material handling, Measuring, Packing, Painting, Palletizing, 
+						Parts inspection, Picking, Polishing, Powdering, Powertrain assembly, Premachining, Press automation, Press brake tending, Press tending, Rubber insertion, Screw driving, Screwdriving, 
+						Sealing, Small parts assembly, Spot welding, Spraying, Testing, Unloading, Welding, Packing.</td>
+						<td> Up to 7 (kg)<br>	
+						     7 - 16 (kg)<br>
+						     16 - 60 (kg)<br>
+						     60 - 225 (kg)<br>
+						     Over 225 (kg)<br>
+						</td>
+						<td>
+						     Up to 1.55 (m)<br>	
+						     Up to 1.8 (m)<br>
+						     1.8 - 2.55 (m)<br>	
+						     Over 2.55 (m)<br>	
+						</td>
+						</tr></table>
+						<br><br></p>
+						<br><hr><br>
+
+						<fieldset>
+						<legend>&nbsp;&nbsp;&nbsp;&nbsp;(1er Robot). <span style= "font-weight: BOLD">SOLDADURA</span>.</legend>
+						<p> Para el proceso de soldadura por arco eléctrico y dado que el robot no manipulará ningúna pieza además de su 
+						propia herramienta, se selecciona uno de carga útil baja (dado que ésto implica un menor costo), y se establece 
+						un alcance mínimo de 1.2 metros con base al mayor desplazamiento que debe realizar sobre la estructura metálica 
+						que se va a soldar. Con estos criterios, y revisando las alternativas que nos brinda el provedor, se selecciona 
+						la referencia IRB 1520ID, un robot manipulador con una carga útil de 4 kg y un alcance de hasta 1.5 m, su diseño 
+						está especialmente desarrollado para aplicaciones de soldadura por arco eléctrico, e incluso el proveedor ABB lo 
+						recomienda para tareas de soldadura de marcos de bicicleta.																	 
+						<br></p>
+						</fieldset><br>
+						<img src="gripperx1.PNG"><br><br></p>
+						<br><hr><br>
+
+						<fieldset>
+						<legend>&nbsp;&nbsp;&nbsp;&nbsp;(2do Robot). <span style= "font-weight: BOLD">LIMPIEZA Y TERMINADO</span>.</legend>
+						<p> Para el proceso de limpieza se busca un robot multipropósito, dado que manipulará las piezas y herramientas necesarias 
+						para los procesos de desbarbado, lijado y pulido, se selecciona uno de carga útil media (entre 7 y 16kg), y se establece 
+						un alcance mínimo de 1.5 metros con base al desplazamiento que se espera deba realizar en la celda y sobre la pieza. 
+						Con estos criterios, y revisando las alternativas que nos brinda el provedor, se selecciona la referencia IRB 2400 con
+						una carga útil de 20 kg y un alcance de hasta 1.55 m, un modelo bastante popular en la industria para su implementación 
+						en múltiples aplicaciones gracias a su versatilidad.																													 
+						<br></p>
+						</fieldset><br>
+						<img src="gripperx4.PNG"><br><br></p>
+						<br><hr><br>
+
+						<p> Entre las alternativas analizadas para un tercer mecanismo, se requiere que éste no sólo intervenga en el transporte 
+						de la pieza entre ambas estaciones de trabajo sino que además pueda apoyar la operación de soldadura, dado que se requerirá 
+						de una rotación de la pieza para que la herramienta del manipulador pueda alcanzar todos los puntos de unión de la estructura. 
+						El proveedor ABB cuenta así mismo con una serie de posicionadores, varios de los cuáles están diseñados especificamente para 
+						ese propósito, por tanto se analizan las opciones de la serie de posicionadores IRBP, para trabajo cooperativo con robots IRB. 															
+																	
+						</p><br><br>			
+									
+						<fieldset>
+						<legend>&nbsp;&nbsp;&nbsp;&nbsp;(Posicionador). <span style= "font-weight: BOLD">IRBP</span>.</legend>
+						<p> Posicionador robot industrial. Los posicionadores ABB están optimizados para ser utilizados para la manipulación de piezas 
+						de trabajo en soldadura por arco, corte térmico y otras aplicaciones. Todos los ejes se pueden coordinar completamente con el 
+						robot durante la programación y durante la operación. Considerando las características de cada posicionador, se opta por seleccionar 
+						la referencia IRBP R, dado que además de contar con 3 ejes de movimiento, integra una pantalla de protección para la soldadura con 
+						arco, lo que permite al robot trabajar sin interrupciones en un lado mientras se carga y descarga la pieza en el otro, y separándo 
+						eficientemente ambas estaciones de trabajo.																																		 
+						<br></p>
+						</fieldset><br>
+						<img src="gripperx4.PNG"><br><br></p>
+						<br><hr><br>	
+
+
+
+
 
 						<hr><hr><hr><hr>
 						<p><span style= "font-weight: BOLD"> SOLUCIÓN PROPUESTA</span><br><br>
