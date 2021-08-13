@@ -27,7 +27,7 @@
 			<article id="tab1">
   					<div class="section1">
 					<div class="sectionText1">
-  						<legend>INTRODUCCIÓN Y OBJETIVOS DEL PROYECTO</legend>
+  						<legend>INTRODUCCIÓN Y RESUMEN DEL PROYECTO</legend>
 						<br>
 						<p>
 						<span style="color: #ffffff"> El proyecto final de la asignatura tiene como propósito general hacer uso
@@ -51,13 +51,24 @@
 						en la celda.
 						</p>
 						<br><br>
+
+						<br><hr><br>						
+						<p><span style= "font-weight: BOLD"> SOLUCIÓN PROPUESTA</span><br><br>
+						En el siguiente video se presenta de forma resumida la simulación completa de la celda robótica desde
+						el entorno de RobotStudio® realizando la secuencia de automatización para el proceso asignado y describiendo 
+						la estructura y distribución de la celda, conexión de componentes inteligentes, entradas y salidas digitales, 
+						programa de código principal, y demás elementos incorporados para la ejecución del proyecto.
+						<br><br>
+						<iframe width="978" height="510" src="https://www.youtube.com/embed/4hXARXhEkuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<br><br></p>
+						<br><hr><br>
 					</div>	
 			</article>
 <!-- ******************************************************************************** -->
 			<article id="tab2">
   					<div class="section2">
 					<div class="sectionText2">
-  						<legend>SELECCIÓN DE ROBOTS Y HERRAMIENTAS</legend>
+  						<legend>HOJA DE RUTA GENERAL</legend>
 						<br>
 						<p>
 						<span style="color: #ffffff"> Con base en el enunciado del proyecto, se requiere implementar dos robots manipuladores 
@@ -68,11 +79,6 @@
 						<br><br><br><br>
 						<p> 
 						<span style= "font-weight: BOLD"> SELECCIÓN DEL ROBOT (MARCA Y REFERENCIA)</span>
-						<br><br>
-						La tarea de diseño y simulación de la celda se realizará por medio del entorno de RobotStudio de ABB, el cuál incluye en sus bibliotecas
-						predeterminadas los modelos de una amplia gamma de robots industriales, razón por
-						la cuál partimos de elegir a ABB como nuestro proveedor, la cual a su vez es una empresa especializada 
-						con una basta experiencia en el campo de la robótica, automatización, equipamientos industriales y otras tecnologías de ingeniería.
 						<br><br>
 						Considerando la alta oferta en robots industriales que brinda este proveedor, ABB dispone de una herramienta de selección denominada <span style="color: #ffffff"> Robot selector </span> 
 						desde su página web (o ingresando <a href="https://new.abb.com/products/robotics/industrial-robots/robot-selector">aquí</a>) la cuál permite filtrar 
@@ -88,36 +94,6 @@
 						se requiere alcanzar la piezas desde la respectiva banda para su posterior embalaje, se eligen entre las opciones disponibles al robot de
 						mayor alcance, el cual corresponde al IRB 1600.</p>
 						<br><br>
-
-						<br><br>
-						<p><span style= "font-weight: BOLD"> 2DO ROBOT. </span> Para la segunda tarea, el robot debe tomar una a una las cajas de cartón desde la
-						banda de salida y realizar el proceso de palletizado sobre una estiva de madera. La aplicación del robot para este caso será de Palletizing.
- 						Para determinar la carga útil, se debe tener en cuenta que el robot manipulará una caja a la vez, cada una con las 20 piezas de vajilla 
-						debidamente embaladas en la tarea anterior, y considerando un peso estimado por cada caja no mayor de 10kg siendo conservadores, razón 
-						por la cual y considerando un peso promedio de la herramienta la opción elegida es "7-16 (kg)". Con éstos filtros limitamos la selección
-						a dos opciones, donde la primera que corresponde al IRB 2600 tiene una carga útil de entre 12-20 kg. Finalmente, para el alcance del robot, 
-						se requiere que el espacio de trabajo contenga la estiba para el posicionamiento de las cajas, por lo cuál se considera que el alcance de  	
-						1.65-1.85 m del IRB 2600 es suficiente para esta tarea.</p>
-						<br><br>				
-						<p><span style= "font-weight: BOLD"> SELECCIÓN DE LAS HERRAMIENTAS </span>
-						<br><br>
-						La selección del tipo de herramienta se consideró partiendo de una búsqueda preliminar de máquinas empleadas en este tipo de industria y 
-						considerando las propiedades físicas de la pieza de trabajo a manipular. Para la primer tarea, se estableció que los platos y pocillos serían 
-						de loza o porcelana, un material recubierto e impermeabilizado con poca adhesión, y la geometría convencional de la vajilla dificulta su manipulación 
-						con un gripper de pinza convencional al no poder garantizar la posición tras el agarre. Bajo estas mismas razones, se decidió emplear una gripper de
-						vacío, dado que la superficie lisa en el centro de los platos y al interior del pocillo facilitan el agarre por succión desde una sola cara de la pieza. 
-						Para la segunda tarea, considerando el ejemplo realizado en clase de laboratorio y haciendo una búsqueda general, encontramos que estas mismas 
-						herramientas de vacío son bastante utilizadas para las aplicaciones de palletizado, y las características de la herramienta como en general el tamaño y
-						la cantidad de copas de succión aumentarán dependiendo del peso de la carga a manipular.
-						<br>
-						Con esta selección de herramientas, se procedió a realizar una búsqueda de fabricantes y referencias para tener una pespectiva más amplia de estas 
-						herramientas, y partimos de los diseños CAD de la línea de grippers de vacio disponibles por parte del proovedor ROBOTIQ, sin embargo, algunas 
-						características se modificaron para poder adaptarlas a la tarea en cuestión y modelar la herramienta para su simulación en el entorno RobotStudio®.
-						<br><br>
-						</p>
-						<p><span style= "font-weight: BOLD"> GRIPPERS DE VACÍO [ROBOTIQ]</span></p><br>
-						<p><img src="gripperx1.PNG"></p><br>
-						<p><img src="gripperx4.PNG"></p><br>
 					</div></div>
 			</article>
 <!-- ******************************************************************************** -->
@@ -269,20 +245,31 @@
 						<img src="POS.PNG"><br><br></p>
 						<br><hr><br>	
 
+						<p>
+						<span style= "font-weight: BOLD"> SELECCIÓN DE HERRAMIENTAS </span>
+						<br><br>
+						La selección del tipo de herramienta se consideró partiendo de una búsqueda preliminar de máquinas empleadas en este tipo de industria y 
+						considerando las propiedades físicas de la pieza de trabajo a manipular. Para la primer tarea, se estableció que los platos y pocillos serían 
+						de loza o porcelana, un material recubierto e impermeabilizado con poca adhesión, y la geometría convencional de la vajilla dificulta su manipulación 
+						con un gripper de pinza convencional al no poder garantizar la posición tras el agarre. Bajo estas mismas razones, se decidió emplear una gripper de
+						vacío, dado que la superficie lisa en el centro de los platos y al interior del pocillo facilitan el agarre por succión desde una sola cara de la pieza. 
+						Para la segunda tarea, considerando el ejemplo realizado en clase de laboratorio y haciendo una búsqueda general, encontramos que estas mismas 
+						herramientas de vacío son bastante utilizadas para las aplicaciones de palletizado, y las características de la herramienta como en general el tamaño y
+						la cantidad de copas de succión aumentarán dependiendo del peso de la carga a manipular.
+						<br>
+						Con esta selección de herramientas, se procedió a realizar una búsqueda de fabricantes y referencias para tener una pespectiva más amplia de estas 
+						herramientas, y partimos de los diseños CAD de la línea de grippers de vacio disponibles por parte del proovedor ROBOTIQ, sin embargo, algunas 
+						características se modificaron para poder adaptarlas a la tarea en cuestión y modelar la herramienta para su simulación en el entorno RobotStudio®.
+						<br><br>
+						<img src=".PNG"><br><br></p>
+						<br><hr><br>
+
+
 
 
 
 
 						<hr><hr><hr><hr>
-						<p><span style= "font-weight: BOLD"> SOLUCIÓN PROPUESTA</span><br><br>
-						En el siguiente video se presenta de forma resumida la simulación completa de la celda robótica desde
-						el entorno de RobotStudio® realizando la secuencia de automatización para el proceso asignado y describiendo 
-						la estructura y distribución de la celda, conexión de componentes inteligentes, entradas y salidas digitales, 
-						programa de código principal, y demás elementos incorporados para la ejecución del proyecto.
-						<br><br>
-						<iframe width="978" height="510" src="https://www.youtube.com/embed/4hXARXhEkuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<br><br></p>
-						<br><hr><br>
 				
 						<p>
 						<span style= "font-weight: BOLD"> ESTRUCTURA Y ELEMENTOS DE LA CELDA </span>
@@ -350,11 +337,18 @@
 			<article id="tab4">
   					<div class="section4">
 					<div class="sectionText4">
+ 
+					</div>
+			</article>
+<!-- ******************************************************************************** -->
+			<article id="tab5">
+  					<div class="section5">
+					<div class="sectionText5">
   						<legend>ENTREGABLES CAD Y ROBOTSTUDIO</legend>
 						<br>
 						<p><span style="color: #ffffff"> En ésta sección se incluyen los enlaces de descarga para todos los archivos generados en el desarrollo de la celda
-						robótica conforme se solicitan entre los entregables requeridos en el enunciado del proyecto final. Los enlaces presentados corresponden a los archivos cargados 
-						en el repositorio de GitHub, el cuál también es accesible ingresando  <a href="https://github.com/ROBOTICA2021-1/PROYECTO-FINAL/tree/main/Entregables">aquí</a>.
+						robótica conforme se solicitan entre los entregables requeridos en el enunciado del proyecto integrado. Los enlaces presentados corresponden a los archivos cargados 
+						en el repositorio de <span style= "font-weight: BOLD">GitHub</span>, el cuál también es accesible ingresando  <a href="https://github.com/TecnoBikes/APM_2021_1/tree/main/%5B4to%20M%C3%B3dulo%5D%20Celda%20de%20Manufactura%20Robotizada/CMR">aquí</a>.
 
 						</span></p>
 						<br><br>
@@ -372,114 +366,29 @@
 						<br><hr><br>
 
 						<p><span style= "font-weight: BOLD">LIBRERÍAS DE ROBOTSTUDIO</span>
-						<form action="https://github.com/ROBOTICA2021-1/PROYECTO-FINAL/tree/main/Entregables/Librer%C3%ADas">
+						<form action="https://github.com/TecnoBikes/APM_2021_1/tree/main/%5B4to%20M%C3%B3dulo%5D%20Celda%20de%20Manufactura%20Robotizada/CMR/Libraries">
 							<button class="Download">DESCARGAR</button><br>
 						</form></p><br> 
 						<p>Para los elementos que componen la celda de trabajo, se utilizaron múltiples modelos CAD de uso gratuito disponibles en 
 						diferentes repositorios web y en formato compatible para su edición desde Autodesk Inventor®. Estos diseños se modificaron 
 						acorde a los requerimientos de nuestro proyecto y se guardaron en un formato .SAT para ser importados como geometría desde 
 						RobotStudio®. Finalmente, se guardaron como librerías en formato .RSLIB para su posterior uso en la contrucción de la celda
-                                                robótica.</p>
+                                                de manufactura robótica.</p>
 						<br>
 						<p><img src="EntregablesRS2.png"></p>
 						<br><hr><br>
 
 						<p><span style= "font-weight: BOLD">ARCHIVOS DE PROGRAMA RAPID</span>
-						<form action="https://github.com/ROBOTICA2021-1/PROYECTO-FINAL/tree/main/Entregables/Programas%20RAPID">
+						<form action="https://github.com/TecnoBikes/APM_2021_1/tree/main/%5B4to%20M%C3%B3dulo%5D%20Celda%20de%20Manufactura%20Robotizada/CMR/Backups/Controller01/RAPID">
 							<button class="Download">DESCARGAR</button><br>
 						</form></p><br> 
-						<p>Dado que se implementaron dos robots manipuladores con un único controlador, se generaron dos programas de código 
-						por medio de RAPID (T_ROB1 y T_ROB2) en el entorno de RobotStudio®, cada uno de estos archivos contiene la definición de los puntos, 
-						trayectorias, herramientas, etc., y en general toda la información correspondiente a las tareas de cada uno de los robots. </p>
+						<p>Dado que se implementaron dos robots manipuladores y un mecanismo posicionador asociados a un único controlador,se generaron tres
+						programas de código por medio de RAPID (T_ROB1, T_ROB2 y T_POS1) en el entorno de RobotStudio®, cada uno de estos archivos contiene 
+						la definición de los puntos, espacios de trabajo, trayectorias, herramientas, etc., y en general toda la información correspondiente 
+						a las tareas de cada uno de los mecanismos.</p>
 						<br>
 						<p><img src="EntregablesRS3.PNG"></p>
-						<br><hr><br>
-					</div>
-			</article>
-<!-- ******************************************************************************** -->
-			<article id="tab5">
-  					<div class="section5">
-					<div class="sectionText5">
-  						<legend>EQUIPO DE TRABAJO Y PROFESORES</legend>
-						<br>
-						<p>
-						<span style="color: #ffffff"> El trabajo presentado corresponde al proyecto final para la asignatura de <span style= "font-weight: BOLD">Robótica</span> 
-						a cargo del Departamento de Ingeniería Mecánica y Mecatrónica de la Universidad Nacional de Colombia para el primer semestre del año 2021.
-						El equipo de trabajo se encuentra conformado por tres estudiantes del pregrado de ingeniería mecatrónica. 
-						</span></p>
-						<br><br><br><br>
-						<p> 
-						<hr>
-						<br><br>
-						<table>
-  						<tr>
-  						<td>
-						<form action="https://www.linkedin.com/in/john-sebastian-panche-estupi%C3%B1%C3%A1n-1647ba1b2/">
-							<button class="buttonLink1">
-							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: BLUE"> jspanchee </span><br>
-							&nbsp;&nbsp;&nbsp;&nbsp; John Sebastian Panche Estupiñán <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;Correo: jspanchee@unal.edu.co <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;Estudiante de Ingeniería Mecatrónica
-							</button><br>
-						</form></p><br></td>
-  						<td>
-						<form action="https://www.linkedin.com/in/jos%C3%A9-jairo-guti%C3%A9rrez-moreno-239308101/">
-							<button class="buttonLink2">
-							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: BLUE"> jojgutierrezmo </span><br>
-							&nbsp;&nbsp;&nbsp;&nbsp; Jose Jairo Gutiérrez Moreno <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;Correo: jojgutierrezmo@unal.edu.co <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;Estudiante de Ingeniería Mecatrónica
-							</button><br>
-						</form></p><br></td>
-  						<td>
-						<form action="">
-							<button class="buttonLink3">
-							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: BLUE"> homorenoj </span><br>
-							&nbsp;&nbsp;&nbsp;&nbsp; Henry Omar Moreno Jiménez <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;Correo: homorenoj@unal.edu.co <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;Estudiante de Ingeniería Mecatrónica
-							</button><br>
-						</form></p><br></td>
-						</tr>
-						</table>
-						<br>
-						<hr>
-						<br>
-						<table>
-  						<tr>
-  						<td>
-						<form action="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000221996">
-							<fieldset>
- 							<legend>&nbsp;&nbsp;&nbsp;&nbsp;PROFESOR</legend>
-							<button class="buttonLink4">
-							&nbsp;&nbsp;&nbsp;&nbsp;PEDRO FABIÁN CÁRDENAS HERRERA <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;Correo: pfcardenash@unal.edu.co <br>		
-							&nbsp;&nbsp;&nbsp;&nbsp; <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;INGENIERO <br>
-							</button><br><br>
-							Área de actuación: Robótica Industrial serial
-							y paralela, Manipuladores móviles, Realidad
-							virtual y Motion Planning, Sistemas mecatrónicos.
-							</fieldset>
-						</form></td>
-    						<td>
-						<form action="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000216666">
-							<fieldset>
- 							<legend>&nbsp;&nbsp;&nbsp;&nbsp;PROFESOR</legend>				
-							<button class="buttonLink5">
-							RICARDO EMIRO RAMÍREZ HEREDIA&nbsp;&nbsp;&nbsp;&nbsp; <br>
-							Correo: reramirezh@unal.edu.co&nbsp;&nbsp;&nbsp;&nbsp; <br>		
-							&nbsp;&nbsp;&nbsp;&nbsp; <br>
-							INGENIERO&nbsp;&nbsp;&nbsp;&nbsp; <br>
-							</button><br><br>
-							Área de actuación: Robótica industrial,
-							Robótica móvil, Automatización industrial,
-							Diseño de máquinas.
-							</fieldset>
-						</form></td>  
-						</tr>
-						</table>	
-						<br><hr>			
+						<br><hr><br>			
 					</div>
 			</article>
 <!-- ******************************************************************************** -->

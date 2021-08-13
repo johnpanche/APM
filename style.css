@@ -208,7 +208,7 @@ ul.tabs li a{
 	border-radius: 0px 50px 50px 0px;
 	background: BLACK;
    	color: WHITE;
-    	text-shadow: 0px 0px 5px GREEN;
+    	text-shadow: 0px 0px 5px BLUE;
 }
 .sectionText1 p {
 	padding: 0px 20px 0px 20px;
@@ -248,7 +248,7 @@ ul.tabs li a{
 	border-radius: 0px 50px 50px 0px;
 	background: BLACK;
    	color: WHITE;
-    	text-shadow: 0px 0px 5px BLUE;
+    	text-shadow: 0px 0px 5px GREEN;
 }
 .sectionText2 p {
 	padding: 0px 20px 0px 20px;
@@ -387,6 +387,7 @@ ul.tabs li a{
 }
 /**********************************************************/
 
+
 .section5 {
 	position:relative;
 	padding: 5px;
@@ -396,6 +397,7 @@ ul.tabs li a{
 }
 
 .sectionText5 {
+	overflow-y: scroll; 
 	height: 1150px;
 	position:relative;
 	margin: auto auto auto auto;
@@ -410,7 +412,7 @@ ul.tabs li a{
 	margin: -5px 0px 20px -20px; 
 	padding: 5px 20px 5px 20px;
 	border-radius: 0px 50px 50px 0px;
-	background: BLACK;
+	background: BLACK;  
    	color: WHITE;
     	text-shadow: 0px 0px 5px PURPLE;
 }
@@ -419,8 +421,24 @@ ul.tabs li a{
 	font: 16px 'Arial', sans-serif;
    	color: BLACK;
 }
+.sectionText5 img {
+	border: 2px solid rgba(56,22,64,0.95);
+	padding: 5px 5px 5px 5px;
+}
 .sectionText5 form {
 	padding: 0px 20px 0px 20px;
+}
+.section5 form button.Download{
+	width:100px;height:20px;
+	border: 2px inset rgba(255,255,255,1);
+	border-radius: 1%;
+	font: bold 12px 'Arial', sans-serif;
+	text-align: center;
+	color: WHITE;
+	background-color: INDIGO;
+}
+.section5 form button:hover{
+	border: 2px inset MEDIUMPURPLE;
 }
 
 .sectionText5 textarea {
