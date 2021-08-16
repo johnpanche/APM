@@ -256,8 +256,20 @@ ul.tabs li a{
    	color: BLACK;
 }
 .sectionText2 img {
-	border: 2px solid rgba(14,84,123,0.95);
+	border: 2px solid rgba(36,70,35,0.95);
 	padding: 5px 5px 5px 5px;
+}
+
+.sectionText2 table.Hoja {
+  	margin-left: auto;
+  	margin-right: auto;
+	padding: 5px 5px 5px 5px;
+  	border: 2px solid rgba(36,70,35,0.95);
+  	width: 95%;
+	text-align: left;
+  	background-color: rgba(255,255,255,0.8);
+	font: 16px 'Arial', sans-serif;
+   	color: BLACK;
 }
 
 /**********************************************************/
@@ -313,6 +325,18 @@ ul.tabs li a{
   	background-color: rgba(0,0,0,0.8);
 	font: 12px 'Arial', sans-serif;
    	color: WHITE;
+}
+
+.sectionText3 table.IO {
+  	margin-left: auto;
+  	margin-right: auto;
+	padding: 5px 5px 5px 5px;
+  	border: 2px solid rgba(131,22,11,0.95);
+  	width: 95%;
+	text-align: left;
+  	background-color: rgba(255,255,255,0.8);
+	font: 16px 'Arial', sans-serif;
+   	color: BLACK;
 }
 
 .sectionText3 fieldset  {
