@@ -79,8 +79,6 @@
 						<br><br>
 						<br><hr><br>
 
-						<br></p><br>
-
 						<p><table class="Hoja"><tr>
 						<td bgcolor= "#b7d5ac"><span style= "font-weight: BOLD"> 1. ALCANCE DEL PROYECTO E INFORMACIÓN PRELIMINAR</span></td>
 						</tr></table>
@@ -157,6 +155,243 @@
 						<td bgcolor= "#b7d5ac">Modelar el diagrama simplificado de flujo de trabajo y maquinaria.</td>
 						<td> Se grafica la línea de proceso (partiendo del diagrama anterior) determinando la cantidad de máquinas y operarios 
 						requeridos, y optimizando el proceso identificando y descartando tareas que no agreguen valor a la operación ni al producto. </td>
+						</tr>
+						</table><br>
+
+						<table class="Hoja"><tr>
+						<td bgcolor= "#b7d5ac"><span style= "font-weight: BOLD"> 4. DISEÑO DE LA CELDA DE MANUFACTURA ROBOTIZADA (CMR)</span></td>
+						</tr></table>
+						<table class="Hoja"><tr>
+						<td style="width:5%;" bgcolor= "#b7d5ac">4.1</td>
+						<td style="width:35%;" bgcolor= "#b7d5ac">Analizar y validar todo la información con que se dispone para el diseño de la celda</td>
+						<td style="width:60%;">Se recomienda que tras el proceso de estudio y modelado del diagrama actual de flujo de trabajo, se esté en 
+						capacidad de dar respuesta a las siguientes preguntas:</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Tiempos de ciclo</td>
+						<td> ¿Cuál es el tiempo de ciclo actual del proceso? ¿Cuál subtarea requiere el mayor tiempo en el proceso? ¿Qué tan bajos son los 
+						tiempos de transporte y posicionamiento entre cada estación?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Especificaciones del manejo de material</td>
+						<td> ¿Qué tan lejos de la herramienta se encontrará el material que debe ser manipulado? ¿Qué tan cerca al producto o la máquina 
+						puede instalarse el sensor? ¿Debe moverse en dirección perpendicular u oblicua a la línea de visión? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Velocidad de avance de la herramienta</td>
+						<td> ¿Qué velocidad se requiere para la operación?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Mezcla de productos	</td>
+						<td> ¿Cuál es el tiempo de ciclo actual del proceso? ¿Cuál subtarea requiere el mayor tiempo en el proceso? ¿Qué tan bajos son los 
+						tiempos de transporte y posicionamiento entre cada estación?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Requerimientos del equipo</td>
+						<td> ¿? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Requerimiento del operario de respaldo/apoyo</td>
+						<td>¿Qué nivel de educación tiene el personal a cargo de operar la celda?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Requerimientos de producción a futuro</td>
+						<td>¿?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Tolerancia admitida para el proceso	</td>
+						<td>¿Con qué precisión y exactitud debe realizarse la tarea? ¿Cuál es el rango (mínimos y máximos) 
+						admitido para el producto terminado?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Tiempo de permanencia de las herramientas</td>
+						<td>¿Se requiere un cambio constante de las herramientas por el desgaste? ¿De cuánto tiempo se estima 
+						la vida útil de las herramientas?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Presión sobre las herramientas</td>
+						<td>¿?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Tiempo máximo de reparo</td>
+						<td>¿De cuánto son los tiempos estimados de mantenimiento registrados para la tarea con el proceso actual?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Rutinas de mal funcionamiento</td>
+						<td>¿?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#a0c892">Requerimientos de desempeño: Tiempos de inactividad permitidos</td>
+						<td>¿?. </td>
+						</tr>
+
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#95c185">Requerimientos de diseño: Geometría de la instalación</td>
+						<td> ¿Cuál es el espacio disponible para toda la celda? ¿Se instalará sobre una superficie de qué material? ¿La plataforma es 
+						plana, redonda, o alguna otra forma? ¿Esta superficie de montaje es estática o móvil? ¿Cuál es el espacio que ocupa esa superficie?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#95c185">Requerimientos de diseño: Consideraciones ambientales</td>
+						<td> ¿Se instalará en un recinto cerrado? ¿Cuál es la temperatura promedio del ambiente en °C (muy frío o muy caliente)? ¿Cuál es la 
+						humedad relativa (muy seco o muy húmedo)? ¿Cuáles son las fuentes de iluminación? ¿Hay iluminación ambiental constante o variable? 
+						¿Hay incidencia de sol directo? ¿Hay variación en el flujo eléctrico y picos máximos? ¿En que rango puede haber vibración mecánica? 
+						¿El aire que ingresa es filtrado o incluye impurezas? ¿Hay algún contaminante en el aire como polvo, humo, aceite o spray? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#95c185">Requerimientos de diseño: Accesibilidad para mantenimiento</td>
+						<td> ¿Qué velocidad se requiere para la operación?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#95c185">Requerimientos de diseño: Requerimientos de relocación de equipos</td>
+						<td> ¿Se espera que la celda permanecerá fija en el mismo punto de instalación o podrá desmontarse para ser reubicada?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#95c185">Requerimientos de diseño: Disponibilidad de servicios requeridos.</td>
+						<td> ¿A qué servicios se tiene acceso en el lugar de instalación? ¿La red eléctrica disponible es monofásica o trifásica? 
+						¿existen interrupciones del servicio de energía o el suministro es constante?</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#95c185">Requerimientos de diseño: Carga del suelo</td>
+						<td>¿Qué nivel de educación tiene el personal a cargo de operar la celda?. </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#95c185">Requerimientos de diseño: Seguridad para máquinas y operarios</td>
+						<td>¿?. </td>
+						</tr>
+
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#8abb78">Características del producto: Orientación</td>
+						<td> ¿El producto entrará a la celda en la orientación deseada?¿o se requiere orientar la pieza para su correcta manipulación? 
+						¿El material entrará ya separado o sobrepuesto uno sobre otro?</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#8abb78">Características del producto: Especificaciones del gripper</td>
+						<td> ¿? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#8abb78">Características del producto: Características de la superficie</td>
+						<td> ¿La superficie del producto es opaca o transparente? ¿qué color es? ¿es brillante o mate? ¿es liso? ¿texturizado? ¿poroso o no poroso? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#8abb78">Características del producto: Requerimientos únicos de manipulación</td>
+						<td> ¿Existe un gripper estándar que pueda realizar la operación? ¿Hay alguna característica particular que requiera de un gripper modificado o especializado? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#8abb78">Características del producto: Tamaño, peso y forma del producto</td>
+						<td>¿El material del producto es metálico (ferroso, magnético), plástico, madera, con recubrimiento, etc.? ¿Cuál es el peso máximo del producto (kg)? 
+						¿Qué dimensiones tiene (alto, ancho, largo)? ¿Cuál es su forma (prismático, poliédrico, cilindrico, esférico, cónico, etc.)?</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#8abb78">Características del producto: Inspección</td>
+						<td>¿Se requiere una inspección de la pieza posterior a la operación?</td>
+						</tr>
+
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#7fb46b">Modificaciones de equipo: Operación sin supervisión</td>
+						<td> ¿Se requiere que la celda trabaje sin supervisión? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#7fb46b">Modificaciones de equipo: Requisito aumentar el rendimiento</td>
+						<td> ¿? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#7fb46b">Modificaciones de equipo: Velocidades mínima/máxima de trabajo</td>
+						<td>¿?</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#7fb46b">Modificaciones de equipo: Requerimientos para operación automática</td>
+						<td>¿?</td>
+						</tr>
+
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#73ad5e">Modificaciones del proceso: Cambios en el tamaño del lote</td>
+						<td> ¿? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#73ad5e">Modificaciones del proceso: Evaluación variable del proceso</td>
+						<td> ¿? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#73ad5e">Modificaciones del proceso: Variaciones de enrutamiento</td>
+						<td>¿?</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#73ad5e">Modificaciones del proceso: Transferencia de datos procesados</td>
+						<td>¿?</td>
+						</tr>
+
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#73ad5e">Integración del sistema: Redes e interfaces de datos</td>
+						<td> ¿? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#73ad5e">Integración del sistema: Requerimientos de integración del hardware</td>
+						<td> ¿? </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#73ad5e">Integración del sistema: Requerimientos de integración de datos</td>
+						<td>¿?</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#73ad5e">Integración del sistema: Requerimientos de la interface de usuario</td>
+						<td>¿?</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#73ad5e">Integración del sistema: Requerimientos de integración del software</td>
+						<td>¿?</td>
+						</tr>
+
+						<td bgcolor= "#b7d5ac">4.2</td>
+						<td bgcolor= "#b7d5ac">Criterios de selección del robot</td>
+						<td>Convertir los requerimientos de la celda y las operaciones en especificaciones técnicas para 
+						la selección del robot.</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#b7d5ac"></td>
+						<td bgcolor= "#b7d5ac">Lista de control para determinar las especificaciones del robot</td>
+						<td> Resolución de la posición, repetibilidad, precisión. Geometria del brazo. Flexibilidad del posicionamiento. Tamaño del entorno de trabajo.	
+						Grados de libertad. Carga útil máxima y nominal. Velocidad máxima y dependiente de la carga útil. Fuerza en dirección de bajada. Requisitos de 
+						conformidad. Requerimientos de cambio de herramienta. Requerimiento de sensor de fuerza/torque. Programación (on y offline). Costo. Requerimientos 
+						especiales. Integración de visión. </td>
 						</tr>
 						</table><br>
 
@@ -463,7 +698,179 @@
 			<article id="tab4">
   					<div class="section4">
 					<div class="sectionText4">
- 
+ 						<legend>ANÁLISIS DE RIESGOS</legend>
+						<br>
+						<p>
+						<span style="color: #ffffff"> Con base en el enunciado del proyecto, se requiere implementar dos robots manipuladores 
+						como mínimo para la ejecución de las tareas de automatización del proceso asignado. En ésta sección se presentan los 
+						criterios de selección empleados para elegir los robots trabajados en el proyecto, además de hacer un análisis de las herramientas
+						seleccionadas para cada tarea.
+						</span></p>
+						<br><br>
+						<br><hr><br>
+
+						<p><img src="CMRRisk1.PNG"></p>
+						<p><img src="CMRRisk2.PNG"></p>
+						<br><hr><br>
+						<p>
+						<table class="Risk"><tr>
+						<td style="width:35%;" bgcolor= "#ffff7a"><span style= "font-weight: BOLD">RIESGO</span></td>
+						<td style="width:35%;" bgcolor= "#ffff7a"><span style= "font-weight: BOLD">MÉTODO Y EQUIPO NECESARIO</span></td>
+						<td style="width:30%;" bgcolor= "#ffff7a"><span style= "font-weight: BOLD">FOTO</span></td>
+						</tr></table>
+						<table class="Risk"><tr>
+						<td style="width:35%;" bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Movimientos del manipulador en la celda.</span> Funcionamiento irregular de 
+						la celda que pueda desencadenar en un movimiento golpe, traumatismo o daño a equipos.</td>
+						<td style="width:35%;" bgcolor= "ffffbf">Ubicación de paros de emergencia en lugares de fácil acceso al operario, o 
+						supervisor de celda. Parada de emergencia. Tarjeta de seguridad X11 CAT3. (Robot)"</td>
+						<td style="width:30%;">sdfsdfsdfzxcd</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Movimientos del manipulador en la celda.</span> Robot realice movimientos programados fuera de 
+						la celda de trabajo que pueda representar un riesgo para el personal al exterior.</td>
+						<td bgcolor= "#ffffbf">Limitación del espacio de trabajo del robot dada su configuración en la celda. Utilizar la 
+						configuración de limitación de áreas y zonas del robot. </td>
+						<td>xcvxcvxcvxcvxcv</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Movimientos del manipulador en la celda.</span> Ingreso de personal no autorizado dentro de la 
+						celda durante la operación normal del manipulador que pueda resultar en golpes o traumatismos contra el personal.</td>
+						<td bgcolor= "#ffffbf">Instalación de una barrera fisica alrededor del manipulador para evitar el ingreso de personas no autorizadas.
+						Cerramiento de seguridad por barreras físicas conforme la normatividad. </td>
+						<td> sdfsdfsdf </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Movimientos del manipulador en la celda.</span> Ingreso de personal no autorizado dentro de la 
+						celda durante la operación normal del manipulador que pueda resultar en golpes o traumatismos contra el personal.</td>
+						<td bgcolor= "#ffffbf">Demarcación de advertencia en la zona con avisos de seguridad. Señales de piso, pared y avisos de advertencia 
+						alrededor de la celda.</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Movimientos del manipulador en la celda.</span> Ingreso de personal no autorizado dentro de la 
+						celda durante la operación normal del manipulador que pueda resultar en golpes o traumatismos contra el personal.</td>
+						<td bgcolor= "#ffffbf">Garantizar que el manipulador se detenga en el caso de ingreso de personal por las puertas de acceso. 
+						Sensor de guardas conectadas a cerrojos de seguridad para pausar la operación.</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Movimientos del manipulador en la celda.</span> Ingreso de personal no autorizado dentro de la 
+						celda durante la operación normal del manipulador que pueda resultar en golpes o traumatismos contra el personal.</td>
+						<td bgcolor= "#ffffbf">Garantizar que el manipulador se detenga en el caso de ingreso de personal por las áreas de entrada y salida de material.
+						Sensor de cortinas de seguridad en zonas de entrada y salida.
+						Barreras físicas adaptadas para la entrada y salida a medida del material esperado."</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Movimientos del manipulador en la celda.</span> Caída del producto durante el movimiento del manipulador debido a una falla eléctrica o neumática.</td>
+						<td bgcolor= "#ffffbf">EOAT (End Of Arm Toolings) con retención de posición en caso de falla de energia. Herramienta adaptada con accionamiento neumático.</td>
+						<td></td>
+						</tr>
+						</table><br>
+
+						<table class="Risk"><tr>
+						<td style="width:35%;" bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Soldadura por arco eléctrico.</span> Choque eléctrico producto de una falla en la instalación y ajuste de la máquina 
+						al interior de la celda.</td>
+						<td style="width:35%;" bgcolor= "ffffbf">Evitar el contacto directo del personal con elementos conductores que puedan provocar un choque eléctrico al interior de la celda.
+						Instalación eléctrica con protección y de cableado al interior de la celda.</td>
+						<td style="width:30%;">sdfsdfsdfzxcd</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Soldadura por arco eléctrico.</span> Deslumbramiento y/o irritación y escozor ocular provocados por la intensidad del arco eléctrico y la 
+						exposición a radiación no ionizante al exterior de la celda. </td>
+						<td bgcolor= "#ffffbf">Encerramiento del espacio de trabajo con protección visual según normativa para evitar la visibilidad del arco eléctrico al exterior de la celda.
+						Barreras físicas y paneles opacos, con ventana de protección para soldadura para supervisión del proceso. </td>
+						<td>xcvxcvxcvxcvxcv</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Soldadura por arco eléctrico.</span> Proyección y manipulación de residuos sólidos expulsados y adheridos a la pieza (escoria) al igual 
+						que partículas incandescentes desprendidas durante la soldadura.</td>
+						<td bgcolor= "#ffffbf">Encerramiento del espacio de trabajo para evitar la expulsión de residuos a personal en el exterior de la celda de trabajo. 
+						Barreras físicas alrededor del espacio de trabajo para bloquear el material particulado. </td>
+						<td> sdfsdfsdf </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Soldadura por arco eléctrico.</span> Inhalación de humos metálicos y gases tóxicos producto del consumo del revestimiento y la fusión 
+						del metal de la soldadura de arco.</td>
+						<td bgcolor= "#ffffbf">Implementar un sistema de ventilación para eliminar los gases al interior de la celda. Sistemas de extracción y ventilación industrial para procesos 
+						de soldadura.</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Soldadura por arco eléctrico.</span> Riesgos anteriores aplicados para operación en el interior de la celda. </td>
+						<td bgcolor= "#ffffbf">Exigir el uso obligatorio de los elementos de protección personal e implementar la señalización adecuada.
+						Careta para soldadura. Tapabocas/Mascarilla. Guantes de carnaza. Peto/Pechera de soldar. Botas punta de acero. Overol de trabajo.</td>
+						<td> </td>
+						</tr>
+						</table><br>
+
+						<table class="Risk"><tr>
+						<td style="width:35%;" bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Desbaste, lijado y pulido.</span> Fricción o abrasión con la pieza de trabajo o la máquina-herramienta.</td>
+						<td style="width:35%;" bgcolor= "ffffbf">Exigir el uso obligatorio de los elementos de protección personal al interior de la celda e implementar la señalización adecuada.
+						"Gafas de protección. Guantes de seguridad. Botas punta de acero. Overol de trabajo.</td>
+						<td style="width:30%;">sdfsdfsdfzxcd</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Desbaste, lijado y pulido.</span> Expulsión e inhalación de material residual particulado resultado del proceso de mecanizado. </td>
+						<td bgcolor= "#ffffbf">Encerramiento del espacio de trabajo para evitar la expulsión de residuos a personal en el exterior de la celda de trabajo.
+						Barreras físicas alrededor del espacio de trabajo para bloquear el material particulado. </td>
+						<td>xcvxcvxcvxcvxcv</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Desbaste, lijado y pulido.</span> Ruido producido por la interacción entre las herramientas y la pieza a trabajar. </td>
+						<td bgcolor= "#ffffbf">Exigir el uso obligatorio de los elementos de protección para operarios que trabajan junto a la celda e implementar la señalización adecuada.
+						Orejeras o protectores auditivos. </td>
+						<td> sdfsdfsdf </td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Desbaste, lijado y pulido.</span> Choque eléctrico por contacto con elementos en tensión o atrapamiento y/o arrastre con elementos de transmisión. </td>
+						<td bgcolor= "#ffffbf">Garantizar que las máquinas - herramientas al interior de la celda se desenergicen si el personal accede a la celda o a proximidad del banco de trabajo. 
+						Interruptor de apagado automático accionado por la apertura de la cerradura. </td>
+						<td> </td>
+						</tr>
+						</table><br>
+
+						<table class="Risk"><tr>
+						<td style="width:35%;" bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Entrada y salida de material de la celda.</span> Golpes o colisión con operarios en la zona de salida. </td>
+						<td style="width:35%;" bgcolor= "ffffbf">Verificar que el área se encuentre despejada previo a la salida del producto de la celda. Barreras físicas y señalamiento a la salida de la celda.</td>
+						<td style="width:30%;">sdfsdfsdfzxcd</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Entrada y salida de material de la celda.</span> Robot inicie movimiento con personal dentro de la celda. </td>
+						<td bgcolor= "#ffffbf">Verificación de cerrojos de seguridad en las puertas de acceso, cortinas de seguridad y sensores activos, con panel de comandos desde HMI y pulsadores fuera de la celda.
+						Luces de alerta y semáforo para alertar en caso de cualquier irregularidad en el funcionamiento de los sistemas de seguridad. </td>
+						<td>xcvxcvxcvxcvxcv</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Entrada y salida de material de la celda.</span>Posición inadecuada del personal al manipular productos a la entrada o salida de la celda. </td>
+						<td bgcolor= "#ffffbf">Garantizar que los productos a la entrada y saldia puedan ser manipulados sin que el operario debe tomar posiciones perjudiciales para su ergonomía.
+						Transporte de entrada y salida a la celda por sobre los 90cms del suelo. </td>
+						<td> sdfsdfsdf </td>
+						</tr>
+						</table><br>
+
+						<table class="Risk"><tr>
+						<td style="width:35%;" bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Tareas de mantenimiento en la celda.</span> Golpe o atrapamiento de robot u otros equipos en movimiento cuando se realicen tareas de mantenimiento o limpieza.</td>
+						<td style="width:35%;" bgcolor= "ffffbf">Asegurar que cuando una persona ingrese por la puerta, los equipos se detengan y no puedan volver a iniciar hasta su salida y reseteo.
+						Cerradura con bloqueo para no permitir cerrar la puerta si se está en mantenimiento.</td>
+						<td style="width:30%;">sdfsdfsdfzxcd</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Tareas de mantenimiento en la celda.</span> Golpe o atrapamiento de robot u otros equipos en movimiento cuando se realicen tareas de mantenimiento o limpieza.</td>
+						<td bgcolor= "#ffffbf">Garantizar que cuando la celda se encuentre en mantenimiento, todo equipo eléctrico se encuentre inhabilitado.
+						Interruptor principal de energia electrica de la celda con disponibilidad para bloqueo por candado en posición de apagado.  </td>
+						<td>xcvxcvxcvxcvxcv</td>
+						</tr>
+						<tr>
+						<td bgcolor= "#ffff7a"><span style= "font-weight: BOLD">Tareas de mantenimiento en la celda.</span> Golpe o atrapamiento de robot u otros equipos en movimiento cuando se realicen tareas de mantenimiento o limpieza. </td>
+						<td bgcolor= "#ffffbf">Asegurar una apertura rápida de las puertas desde el interior de la celda.
+						Seguro rápido de apertura de puertas sin restricciones al interior de la celda. </td>
+						<td> sdfsdfsdf </td>
+						</tr>
+						</table><br>
+
+						</p>
+						<br><hr><br>
 					</div>
 			</article>
 <!-- ******************************************************************************** -->

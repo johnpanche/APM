@@ -397,17 +397,17 @@ ul.tabs li a{
 .sectionText4 form {
 	padding: 0px 20px 0px 20px;
 }
-.section4 form button.Download{
-	width:100px;height:20px;
-	border: 2px inset rgba(255,255,255,1);
-	border-radius: 1%;
-	font: bold 12px 'Arial', sans-serif;
-	text-align: center;
-	color: WHITE;
-	background-color: GOLD;
-}
-.section4 form button:hover{
-	border: 2px inset YELLOW;
+
+.sectionText4 table.Risk {
+  	margin-left: auto;
+  	margin-right: auto;
+	padding: 5px 5px 5px 5px;
+  	border: 2px solid rgba(240,192,7,0.95);
+  	width: 95%;
+	text-align: left;
+  	background-color: rgba(238,238,238,0.8);
+	font: 16px 'Arial', sans-serif;
+   	color: BLACK;
 }
 /**********************************************************/
 
