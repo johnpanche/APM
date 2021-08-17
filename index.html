@@ -627,44 +627,24 @@
 						<p>
 						<span style= "font-weight: BOLD"> ESTRUCTURA Y CONSTRUCCIÓN DE LA CELDA </span>
 						<br><br>
-						Con base en el ideal planteado por el equipo, partimos de realizar la búsqueda de los modelos CAD para los diversos elementos 
-						que conformarían la celda de trabajo, comenzando por insertar los modelos de los robots previamente seleccionados desde la 
-						Biblioteca ABB y los diseños CAD de las herramientas ya adaptados y configurados como tool para su uso en RobotStudio®. <br> 
-						Desde este punto, comenzamos a incorporar otros elementos fundamentales para la simulación, partiendo por el material inicial que
-						corresponde a las 5 piezas de vajilla, las bandas transportadoras de alimentación, un modelo preliminar de la caja y la banda
-						para el ingreso de las cajas a la celda. A medida que se insertaban estos elementos se iban sumando otros componentes gráficos 
-						que pese a no intervenir directamente en el proceso harían de complemento en el diseño de la celda, como
-						barreras físicas, operarios y máquinas, diversos elementos de seguridad, entre otros. <br>
- 						A lo largo de todo el diseño se continuó agregando y adaptando
-						componentes graficos para la ambientación de la celda.
+						Con base en el ideal planteado por el equipo y el análisis de riesgos presentado, partimos de realizar la búsqueda de los 
+						modelos CAD para los diversos elementos que conformarían la celda de trabajo, comenzando por insertar los modelos de los 
+						robots previamente seleccionados desde la Biblioteca ABB junto con el posicionador de este mismo proveedor, y los diseños 
+						CAD de las herramientas ya adaptados y configurados como tool para su aplicación en RobotStudio®. <br> 
+						Despúes, procedimos a incorporar el material inicial que corresponde al marco de bicicleta. A medida que se insertaban estos 
+						elementos se iban sumando otros componentes gráficos que pese a no intervenir directamente en la simulación, juegan un papel importante
+						para presentar el diseño completo de la celda, como barreras físicas, operarios y máquinas, diversos elementos de seguridad, entre otros. <br>
 						<br><br>
-						<img src=""><br><br></p>
 						<br><hr><br>
+
 						<p>
 						<span style= "font-weight: BOLD"> COMPONENTES INTELIGENTES E INTERCONEXIONES </span>
 						<br><br>
-						Conforme se avanzaba con la construcción de la celda, se asignaron las propiedades físicas y cuerpos dinámicos para los componentes
-						que interactuarían durante la ejecución de cada tarea, omitiendo los complementos que solo se agregaron como apoyo visual. Partiendo
-						del ejemplo final realizado durante las clases de laboratorio, se crearon múltiples grupos de componentes con el fin de controlar la
-						secuencia de las diferentes tareas y su interacción con cada robot. <br>
-						En un primer grupo, se comenzó por incluir las bandas de alimentación junto con las superficies de transporte que permitirían el desplazamiento
-						de las piezas de la vajilla hasta el extremo de la banda sumado al componente de física que establece la velocidad de movimiento. 
-						Posterior a esto, se incluyeron dos sensores de línea por cada banda, un primer sensor en un punto medio asignado a un componente de fuente para 
-						garantizar la continua alimentación de las piezas, y un segundo sensor al final de cada banda para controlar el avance de las piezas y
-					 	a su vez conectado a un par de indicadores led que se alternan dependiendo del estado de la banda. Este grupo por tanto contiene cinco
-						bloques de secuencia idénticos, cada uno asociado a una de las bandas de alimentación.
-						En un segundo grupo, se agregaron los mismos componentes inteligentes, pero en este caso para una única banda de alimentación de cajas, 
-						con la única diferencia de que la activación del último sensor de línea no está limitado únicamente a la posición de las cajas, sino 
-						también a una entrada digital controlada por el programa principal, el cual se detallará en la siguiente sección.
-						Continuando con ésta lógico, se agregó un tercer grupo con la misma secuencia de componentes inteligentes, pero este asociado a la banda de alimentación
-						de estibas de madera, la cual avanzará hasta alcanzar determinada posición y su próximo avance estará determinado por el programa en ejecución.
-						Finalmente, se crearon un cuarto y un quinto grupo de componentes inteligentes, en este caso asociados a cada una de las herramientas. Para esta lógica,
-						se dispone de un sensor en línea conectado al TCP de cada uno de los robots, de modo que al detectar un cuerpo sólido durante la ejecución del programa, 
-						se genera un enlazamiento con el objeto detectado. En el programa principal y por medio de entradas y salidas digitales se controla el estado de la 
-						herramienta, con el fin de liberar el objeto enlazado cuando se haya alcanzado una posición determinada.
-						Con ésta serie de componentes inteligentes, fue posible establecer los movimientos e interacciones entre las piezas y demás elementos de la celda 
-						distintos a los vinculados al controlador de los robots.
+						Dado que el trabajo en el módulo se centra en el diseño de la celda de manufactura con los mecanismos seleccionados, no se consideró 
+						necesario implementar una gran cantidad de componentes inteligentes para lograr una simulación realista de la celda de trabajo.
+						
 						<br><br></p>
+						<p><img src="CI.PNG"><br><br></p>
 						<br><hr><br>
 						<p>	
 						<span style= "font-weight: BOLD"> ENTRADAS/SALIDAS DIGITALES Y PROGRAMA EN RAPID </span>
