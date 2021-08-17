@@ -642,24 +642,23 @@
 						<br><br>
 						Dado que el trabajo en el módulo se centra en el diseño de la celda de manufactura con los mecanismos seleccionados, no se consideró 
 						necesario implementar una gran cantidad de componentes inteligentes para lograr una simulación realista de la celda de trabajo.
-						
+						La ejecución del programa completo inicia con el movimiento lineal del material a la entrada de la celda, el cuál avanzará hasta ser detectado
+ 						por un sensor de línea. Una vez este sensor se activa, la pieza en movimiento se detiene y se envía una señal digital al controlador para comenzar 
+						simultánemente la ejecución de cada uno de los módulos. El primer robot realizará una trayectoria para acercarse a la pieza recién ingresada y 
+						una vez en posición se utilizan dos señales digitales del controlador para activar e inactivar el accionamiento del gripper. De éste modo, 
+						el gripper se cierra con la señal respectiva y genera el agarre con la pieza, continuando con la trayectoria para maniobrarla hasta ubicarla sobre
+						la mesa del posicionador y terminará esta primer tarea abriendo el gripper para liberar a la pieza y retornando a su posición de home.
+						A medida que se ejecuta esta primer tarea, el segundo robot ejecutará una trayectoria para la limpieza de la herramienta de trabajo y aguardará
+						la señal de entrada de la pieza a la estación por el giro del posicionador para iniciar la tarea de soldadura. El controlador utiliza dos salidas 
+						digitales para guiar el giro del posicionador en 180°, permitiendo además utilizar el estado de estas señales para sincronizar las tareas de ambos
+						módulos. Una vez finaliza la tarea de soldadura, el posicionador retorna a su punto inicial trayendo la pieza de trabajo nuevamente a la primer estación
+						y al tiempo que se valida la activación de esta señal, el primer módulo continúa su ejecución para realizar la tarea de limpieza. Finalmente, 
+						el programa lleva a la pieza terminada a la posición de salida de la celda, en donde activará un sensor de línea que habilitará nuevamente el movimiento
+						lineal de la pieza de trabajo y reiniciará la simulación. 
 						<br><br></p>
 						<p><img src="CI.PNG"><br><br></p>
 						<br><hr><br>
-						<p>	
-						<span style= "font-weight: BOLD"> ENTRADAS/SALIDAS DIGITALES Y PROGRAMA EN RAPID </span>
-						<br><br>
-						En este punto, se requiere relacionar todas las secuencias e interacciones de movimiento generadas en la 
-						celda por medio de los componentes inteligentes y vincularlas con las trayectorias del robot para realizar cada tarea.
-						Con el fin de establecer ésta comunicación con el controlador, se crearon entradas y salidas digitales para determinar los punto de partida 
-						de cada tarea y se conectaron en la lógica de estación, de modo que desde el código de RAPID ninguno de los robots realice
-						ninguna acción hasta que reciba la señal digital por parte de los sensores de linea de cada grupo de componentes 
-						inteligentes establecidos en la sección anterior. Con esta lógica, el primer robot permanecerá estático hasta que una de las 
-						cajas no active el sensor de línea de la banda de alimentación de cajas, indicando al controlador que hay una caja en posición
-						para proceder a realizar la primer tarea. Del mismo modo, el controlador una vez ejecutado el ciclo del programa para las 20 piezas, 
-						enviará la señal para desactivar el sensor de línea y permitir que la caja continúe avanzando sobre la banda auxiliar hasta activar 
-						el sensor de línea que da comienza a la ejecución de la segunda tarea.
-						<br><br></p>
+
 						<br><hr><br>
 					</div>
 			</article>
